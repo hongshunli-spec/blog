@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>个人博客</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="">
+    <meta name="generator" content="Hugo 0.163.3">
+    
+    
+    
+      <meta name="robots" content="index, follow">
+    
+    
+
+    <link rel="stylesheet" href="/ananke/css/main.02a37ad6c4e155c542d276915a0e3f83f5c7c5fec443350f6e60753f1679b7a7.css" integrity="sha256-AqN61sThVcVC0naRWg4/g/XHxf7EQzUPbmB1PxZ5t6c=" crossorigin="anonymous">
+    <script>
+  (function () {
+    "use strict";
+
+    
+    
+    function revealButtons() {
+      var buttons = document.querySelectorAll(".code-block .code-copy[hidden]");
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].hidden = false;
+      }
+    }
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", revealButtons);
+    } else {
+      revealButtons();
+    }
+
+    function flash(button) {
+      var label = button.querySelector(".code-copy-label");
+      var previous = label ? label.textContent : null;
+      button.classList.add("is-copied");
+      if (label) label.textContent = "Copied";
+      window.setTimeout(function () {
+        button.classList.remove("is-copied");
+        if (label && previous !== null) label.textContent = previous;
+      }, 2000);
+    }
+
+    function legacyCopy(text) {
+      var area = document.createElement("textarea");
+      area.value = text;
+      area.setAttribute("readonly", "");
+      area.style.position = "absolute";
+      area.style.left = "-9999px";
+      document.body.appendChild(area);
+      area.select();
+      var ok = false;
+      try {
+        ok = document.execCommand("copy");
+      } catch (e) {
+        ok = false;
+      }
+      document.body.removeChild(area);
+      return ok;
+    }
+
+    function copyFrom(button) {
+      var container = button.closest(".code-block");
+      if (!container) return;
+      var pre = container.querySelector("pre");
+      if (!pre) return;
+      var source = pre.querySelector("code") || pre;
+      var text = source.innerText;
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(
+          function () { flash(button); },
+          function () { if (legacyCopy(text)) flash(button); }
+        );
+      } else if (legacyCopy(text)) {
+        flash(button);
+      }
+    }
+
+    document.addEventListener("click", function (event) {
+      var button = event.target.closest(".code-copy");
+      if (button) copyFrom(button);
+    });
+  })();
+</script>
+
+    
+      
+
+    
+
+    
+    
+      <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="个人博客" />
+      <link href="/posts/index.xml" rel="feed" type="application/rss+xml" title="个人博客" />
+      
+    
+
+    
+      <link rel="canonical" href="https://xxx.pages.dev/posts/">
+    
+
+    
+    
+    <meta property="og:url" content="https://xxx.pages.dev/posts/">
+	<meta property="og:site_name" content="个人博客">
+	<meta property="og:title" content="Posts">
+	<meta property="og:locale" content="zh_cn">
+	<meta property="og:type" content="website">
+
+	<meta itemprop="name" content="Posts">
+	<meta itemprop="datePublished" content="2026-06-22T20:37:34+08:00">
+	<meta itemprop="dateModified" content="2026-06-22T20:37:34+08:00">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Posts">
+
+      
+      
+    
+	
+  </head><body class="ma0 avenir bg-near-white production is-section is-section">
+
+  <header>
+    <div class="pb3-m pb6-l bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        个人博客
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+      
+      <div class="tc-l pv3 ph3 ph4-ns">
+        <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title">
+          Posts
+        </h1>
+        
+      </div>
+    </div>
+  </header>
+
+<main class="pb7" role="main">
+  
+  
+
+  <article class="pa3 pa4-ns nested-copy-line-height">
+    <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy nested-links mid-gray"></section>
+    <section class="flex-ns mt5 flex-wrap justify-around">
+      
+        <div class="w-100 w-30-l mb4 relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
+  <div class="mb3 pa4 gray overflow-hidden bg-white">
+    <span class="f6 db">Posts</span>
+    
+    <h1 class="f3 near-black">
+      <a href="/posts/%E5%8D%95%E8%AF%8D%E8%AE%B0%E5%BF%86%E5%8D%A1bucket-%CB%88b%CA%8Ck%C9%AAt/" class="link black dim">
+        
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <p>记忆闪卡：Bucket /ˈbʌkɪt/</p>
+<p>【正面（背诵遮挡面）】</p>
+<p>单词：Bucket
+词性：n.
+场景：日常｜对象存储S3/MinIO/OSS</p>
+<p>【背面（释义+象形记忆+IT释义，复习用）】</p>
+<p>1、象形拆分记忆（你的原创记法）</p>
+<p>B：大肚子孕妇（身形鼓鼓）
+U：圆筒桶身（外形就是水桶）
+cket 辅助收尾拼写
+联想：B+U拼出水桶轮廓 → bucket=水桶</p>
+<p>2、单词本义</p>
+<p>n. 水桶、提桶</p>
+<p>3、计算机·对象存储专业释义（核心考点）</p>
+<p>Bucket = 存储桶</p>
+<p>1. 对象存储顶层唯一容器，类比电脑C盘/D盘；
+2. 桶内只存Object（文件对象），桶下不能新建桶；
+3. 桶名全网全局唯一，S3、阿里云OSS、MinIO必备概念。</p>
+<p>短句速记</p>
+<p>A bucket holds water.（桶装水）
+Storage bucket holds files.（存储桶装文件）</p>
+<p>需要我做成纯卡片精简版，方便直接复制到Obsidian卡片吗？                    await app.fileManager.renameFile(file, timestampPath);
+}
+}
+}
+};</p>
+<pre><code>// 告诉 Obsidian：只要这个文件被写入内容了，立刻叫醒上面的 onModify 函数
+app.vault.on('modify', onModify);
+
+// 防呆机制：如果5秒内啥也没发生（比如剪贴板是空的），自动注销监听，省得占内存
+setTimeout(() =&gt; app.vault.off('modify', onModify), 5000);
+</code></pre>
+<p>}
+%&gt;</p>
+    </div>
+    <a href="/posts/%E5%8D%95%E8%AF%8D%E8%AE%B0%E5%BF%86%E5%8D%A1bucket-%CB%88b%CA%8Ck%C9%AAt/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="w-100 w-30-l mb4 relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
+  <div class="mb3 pa4 gray overflow-hidden bg-white">
+    <span class="f6 db">Posts</span>
+    
+    <h1 class="f3 near-black">
+      <a href="/posts/%E5%8D%95%E8%AF%8D%E8%AE%B0%E5%BF%86%E5%8D%A1resilience/" class="link black dim">
+        
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <p>单词记忆卡｜resilience</p>
+<p>【音标】/rɪˈzɪliəns/
+【词性】n.
+【释义】韧性；复原力；（材料）弹性</p>
+<p>词根拆分</p>
+<p>re-(回) + sil(跳，词根sal变体=跳跃) + -ience(名词后缀)
+字面：往回跳 → 受压跳回原形→弹性、受挫后复原</p>
+<p>同源捆绑（同词根sal/sult=跳）</p>
+<p>1. result re(回)+sult(跳)→跳回来→结果
+2. insult in(上前)+sult(跳)→跳到人前挑衅→侮辱
+3. assault as(去往)+sault(跳)→猛扑上前→突袭</p>
+<p>短句</p>
+<p>Her resilience helped her through difficulties.
+她的坚韧帮她渡过难关。</p>
+<p>速记口诀</p>
+<p>re回sil跳，ience变名词，回弹就是韧性力</p>
+    </div>
+    <a href="/posts/%E5%8D%95%E8%AF%8D%E8%AE%B0%E5%BF%86%E5%8D%A1resilience/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="w-100 w-30-l mb4 relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
+  <div class="mb3 pa4 gray overflow-hidden bg-white">
+    <span class="f6 db">Posts</span>
+    
+    <h1 class="f3 near-black">
+      <a href="/posts/%E5%A4%A9%E7%BA%BF%E9%80%9F%E8%AE%B0%E5%B0%8F%E7%BB%93/" class="link black dim">
+        
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <p>天线速记小结</p>
+<p>1. 半波偶极：总长λ/2，单臂λ/4，中点馈电，阻抗73Ω，两端开路。
+2. 行波/驻波：波单向行进是行波；入射+反向反射叠加、波形定点震荡为驻波。
+3. 驻波比VSWR：最大电压÷最小电压，理想1，工程≤1.5，数值大代表反射损耗高。正常全行波，无驻波，电压一样。
+4. 增益：汇聚辐射能量，dBi对标点源、dBd对标偶极，1dBd=2.15dBi。
+5. 极化：电场方向，收发极化一致损耗才小。
+6. 无闭合回路有电流：依靠振子间分布电容充放电+空间位移电流形成交变电流。</p>
+    </div>
+    <a href="/posts/%E5%A4%A9%E7%BA%BF%E9%80%9F%E8%AE%B0%E5%B0%8F%E7%BB%93/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="w-100 w-30-l mb4 relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
+  <div class="mb3 pa4 gray overflow-hidden bg-white">
+    <span class="f6 db">Posts</span>
+    
+    <h1 class="f3 near-black">
+      <a href="/posts/%E5%AD%98%E5%82%A8%E5%88%86%E7%B1%BB/" class="link black dim">
+        
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <p>存储分类
+分块存储、文件存储和对象存储。其中块存储都是底层的，那么对象存储呢，不能分开编辑，是一个整体，是由集群进行统一控制，不是操作系统。
+云相册它都是对象存储，它实际上没有文件夹的概念。才一个，新建一个相册，实际上是对这个文件打了一个标签。所以像天翼云盘什么的，它都是只能简单的在 APP 上新建相册，你按文件夹结构导进去的，它是不能作为相册名的。谷歌相册开放了 API 接口，可以通过这个 API 来用R C L O N E进行自动新建相册并导入文件。</p>
+    </div>
+    <a href="/posts/%E5%AD%98%E5%82%A8%E5%88%86%E7%B1%BB/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="w-100 w-30-l mb4 relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
+  <div class="mb3 pa4 gray overflow-hidden bg-white">
+    <span class="f6 db">Posts</span>
+    
+    <h1 class="f3 near-black">
+      <a href="/posts/%E6%B5%B7%E5%BA%B7%E5%A8%81%E8%A7%86%E7%9A%84%E5%88%9B%E5%A7%8B%E5%92%8C%E8%82%A1%E6%9D%83%E6%9E%B6%E6%9E%84%E7%A1%AE%E5%AE%9E%E6%98%AF%E4%B8%80%E4%B8%AA%E6%9E%81%E5%85%B6%E7%BD%95%E8%A7%81%E7%9A%84%E5%9B%BD%E5%AE%B6%E9%A1%B6%E7%BA%A7%E7%A0%94%E7%A9%B6/" class="link black dim">
+        
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <p>海康威视的创始和股权架构，确实是一个极其罕见的**“国家顶级研究所 + 天才技术员 + 佛系天使投资人”<strong>的完美剧本。它不是靠资本拼出来的，而是当年体制内最狠的一批技术狂人，踩中了时代的红利。
+​关于它的创始人身份、国资控制以及最狠的技术大牛，可以从以下三个硬核维度来聊：
+​1. 创始团队“华科三剑客”与“28罗汉”
+​海康威视的核心创始团队，被业界称为华中科技大学（原华中工学院）的</strong>“三剑客”<strong>（他们全都出生于1965年）：
+​陈宗年：走“技术 + 管理”路线。原五十二所高管，长期担任海康威视董事长，负责掌舵和体制内的协调。
+​胡扬忠：纯粹的技术狂人路线。原五十二所顶级工程师，后来长期担任海康总经理（2024年8月接替陈宗年出任董事长），是海康内部公认的</strong>“灵魂人物”**。
+​龚虹嘉：香港籍，他们大学的同班同学。他不是体制内的技术员，他是天使投资人。2001年海康刚成立时缺钱，龚虹嘉自掏腰包 245万元 占股 49% 帮老同学圆梦（后来他套现了300多个亿，被称为“中国最牛天使投资人”）。
+​“28罗汉”的出身： 2001年，陈宗年和胡扬忠带着五十二所的 26名硬核技术员，直接放弃了国家事业单位的“铁饭碗”脱离编制下海。这 28 个人，就是海康威视最初的全部班底。
+​2. 现在是谁在控制海康？（关于 59% 国资的误解）
+​你提到的“国资59%”在数据上很接近，但海康威视的实际控制权非常清晰——它是一家国资控股的上市公司，老牌“国家队”：
+​大老板（实际控制人）：国务院国资委 下属的 中国电子科技集团（中国电科，CETC）。
+​直接控股股东：中电海康集团（中国电科的子公司）以及五十二所等一致行动人，总共控制了海康威视约 40%以上 的股份。
+​现在的控制者身份：海康的管理层。海康虽然是国资绝对控股，但国家极为聪明地实行了“无为而治”，把经营权完全交给了以 胡扬忠 为首的这帮当年的技术员团队。在A股里，海康是国企改革、管理层持股激励做得最好的标杆之一。
+​3. 海康内部最狠的“技术大牛”是谁？
+​海康威视能打破海外垄断，坐上全球安防第一把交椅，靠的是两个时代最顶级的技术突破，而背后有这几个最狠的人：
+​视音频压缩时代的“技术战神”——胡扬忠
+在2000年左右，监控行业最头疼的是“录像文件太大，硬盘一下就爆了”。胡扬忠在五十二所时，就是搞存储和芯片开发的技术大牛。他带队研究出基于 H.264 / MPEG-4 视频压缩标准 的软硬件板卡，把监控视频体积压缩了数倍还极度清晰，这一套底层代码和板卡直接成了海康打天下的“大杀器”。
+​生态链条上的芯片与光学幕后推手——龚虹嘉 + 富瀚微团队
+做技术不光看自己，还要看供应链。创始人之一的龚虹嘉在投资海康后，敏锐地发现摄像头里面的安防芯片和光学镜头全被海外垄断。于是他顺着产业链，在外面投资了富瀚微（做安防视频芯片）和联合光电（做高端变焦镜头）。这两家公司后来成为了海康最核心、技术最狠的“御用”供应链，彻底帮海康把硬件成本杀成了白菜价，完成了国产替代。
+​AI与大数据时代的“深眸”算法团队
+进入天网工程中后期和雪亮工程时代，海康最狠的技术转向了人工智能（AI）和深度学习。海康研究院（内部最顶尖的研发大脑）集中了海内外数千名计算机视觉（CV）博士，研发出“深眸”、“神捕”系列摄像头，把人脸识别、车牌抓取、行为分析做成了工业流水线。
+​饭局总结金句：
+“所以海康威视的底色，就是一群中国电子科技集团最顶尖的技术员，砸碎了铁饭碗出来，拿了大学同学的几百万天使投资做起来的。它名义上是国资绝对控股的国家队，但骨子里二十年来一直由胡扬忠这帮技术痴迷者在疯狂卷技术。这种‘国资撑腰、专家治厂、技术死磕’的奇葩组合，才是它能把西方巨头全部打趴下的真正原因。”</p>
+    </div>
+    <a href="/posts/%E6%B5%B7%E5%BA%B7%E5%A8%81%E8%A7%86%E7%9A%84%E5%88%9B%E5%A7%8B%E5%92%8C%E8%82%A1%E6%9D%83%E6%9E%B6%E6%9E%84%E7%A1%AE%E5%AE%9E%E6%98%AF%E4%B8%80%E4%B8%AA%E6%9E%81%E5%85%B6%E7%BD%95%E8%A7%81%E7%9A%84%E5%9B%BD%E5%AE%B6%E9%A1%B6%E7%BA%A7%E7%A0%94%E7%A9%B6/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="w-100 w-30-l mb4 relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
+  <div class="mb3 pa4 gray overflow-hidden bg-white">
+    <span class="f6 db">Posts</span>
+    
+    <h1 class="f3 near-black">
+      <a href="/posts/%E7%94%B5%E4%BF%A1%E5%85%89%E7%8C%AB%E7%99%BB%E9%99%86/" class="link black dim">
+        
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <p>电信光猫登陆
+1口主卧，2口客厅，3口书房，4口客房
+软件版本号V1.0.0P2T2
+MAC8C:8E:0D:D6:35:74
+LAN IP192.168.1.25
+客厅,，原配客厅
+软件版本号V1.0.0P2T2
+MAC44:32:62:6B:90:D4
+LAN IP192.168.1.26
+客房，客厅
+软件版本号V1.0.0P1T2
+MAC98:66:10:89:11:48
+LAN IP192.168.1.15
+主卧，客房</p>
+<p>设备类型1G-GPON FTTR从设备
+产品型号ZXHN G1612
+产品序列号986610-35833986610891148
+telecomadmin
+NE7jA%5m</p>
+<p>启用NPTv6
+启用PassThrough功能</p>
+<p>产品型号ZXHN G1612
+telecomadmin的超级密码</p>
+<p>NE7jA%5m
+通常是nE7jA%5m，这是默认密码之一。此外，超级密码的组成可能是TeleCom_ {产品序列号后6位小写}，例如TeleCom_7ccc4a。如果你需要获取具体的密码，可以通过开启telnet服务并查看设备内容来找到。请注意，密码可能会因设备或服务提供商而有所不同，因此建议检查设备背面的标签或说明书以获取最新信息</p>
+    </div>
+    <a href="/posts/%E7%94%B5%E4%BF%A1%E5%85%89%E7%8C%AB%E7%99%BB%E9%99%86/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="w-100 w-30-l mb4 relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
+  <div class="mb3 pa4 gray overflow-hidden bg-white">
+    <span class="f6 db">Posts</span>
+    
+    <h1 class="f3 near-black">
+      <a href="/posts/%E7%94%B5%E8%84%91%E7%A1%AC%E4%BB%B6%E9%85%8D%E7%BD%AE-%E5%A4%A9%E7%BF%BC%E4%BA%91%E7%94%B5%E8%84%91/" class="link black dim">
+        
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <p>设备规格
+设备名称：ahwh5_YDN2C4G-s
+处理器：Intel Xeon Processor (Skylake, IBRS) 2.99 GHz（2 个处理器）
+机带 RAM：4.00 GB
+设备 ID：1622CCB4-857C-400F-8364-E01BA2253CCB
+产品 ID：00454-10000-00001-AA921
+系统类型：64 位操作系统，基于 x64 的处理器
+笔和触控：没有可用于此显示器的笔或触控输入
+Windows 规格
+操作系统版本：Windows Server 2022 Standard
+版本号：21H2
+安装日期：2025/8/11
+操作系统内部版本：20348.4893</p>
+    </div>
+    <a href="/posts/%E7%94%B5%E8%84%91%E7%A1%AC%E4%BB%B6%E9%85%8D%E7%BD%AE-%E5%A4%A9%E7%BF%BC%E4%BA%91%E7%94%B5%E8%84%91/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="w-100 w-30-l mb4 relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
+  <div class="mb3 pa4 gray overflow-hidden bg-white">
+    <span class="f6 db">Posts</span>
+    
+    <h1 class="f3 near-black">
+      <a href="/posts/%E7%94%B5%E8%84%91%E7%A1%AC%E4%BB%B6%E9%85%8D%E7%BD%AEhong-home/" class="link black dim">
+        
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <p>电脑硬件配置汇总
+系统：64 位 x64 操作系统
+处理器：Intel Core i3-10105 @ 3.70GHz
+内存：12.0GB，运行频率 2666MHz
+独立显卡：AMD Radeon RX 580 2048SP，显存 4GB
+存储
+固态硬盘：金邦 GeIL P3L 1TB（实际容量 932GB）
+机械硬盘：西部数据 WD40PURX 4TB（实际容量 3.64TB）
+总存储容量：约 4.55TB，已使用 2.39TB
+设备名称：HONG-HOME
+显卡详情（AMD RX580 2048SP）
+核心规格：2048 流处理器，是 RX580 的精简版（原版 2304SP），多为矿卡改版，GPU 芯片 ID：0x6FDF
+显存参数
+物理独显显存 (VRAM)：4074MB≈4GB GDDR5
+主板：华硕 PRIME H410M-K R2.0（ASUSTeK COMPUTER INC.）
+BIOS 信息：American Megatrends Inc. 2803，2023/4/3，UEFI 模式，SMBIOS 3.2
+搭配参考
+日常：1080P 网游（LOL、CS2）全高画质流畅；3A 大作中低画质运行
+短板：4G 显存玩新 3A 容易爆显存，该型号市面上绝大多数为二手矿卡</p>
+    </div>
+    <a href="/posts/%E7%94%B5%E8%84%91%E7%A1%AC%E4%BB%B6%E9%85%8D%E7%BD%AEhong-home/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="w-100 w-30-l mb4 relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
+  <div class="mb3 pa4 gray overflow-hidden bg-white">
+    <span class="f6 db">Posts</span>
+    
+    <h1 class="f3 near-black">
+      <a href="/posts/%E7%94%B5%E8%84%91%E7%A1%AC%E4%BB%B6%E9%85%8D%E7%BD%AEhong-homes/" class="link black dim">
+        
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <table>
+	<thead>
+			<tr>
+					<th>项目</th>
+					<th>参数详情</th>
+					<th>补充说明</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>机型</td>
+					<td>联想启天 M620-N000（商用台式机）</td>
+					<td>联想政企采购主力商务机型，Q370 芯片组主板</td>
+			</tr>
+			<tr>
+					<td>CPU</td>
+					<td>i5-9500 6 核 6 线程，基础 3.0GHz</td>
+					<td>9 代酷睿桌面处理器，无超线程，睿频最高 4.4GHz，自带 UHD630 核显</td>
+			</tr>
+			<tr>
+					<td>内存</td>
+					<td>当前 4GB DDR4</td>
+					<td>原厂标配多为 8GB，本机后缩减为 4GB，主板双内存插槽可升级至 32GB</td>
+			</tr>
+			<tr>
+					<td>主板</td>
+					<td>联想定制 Q370 芯片组（板载编号 3133），BIOS 日期 2019.8.14 UEFI 启动模式</td>
+					<td>Q370 为商用级芯片，支持 Intel vPro 企业管理、多硬盘阵列</td>
+			</tr>
+	</tbody>
+</table>
+    </div>
+    <a href="/posts/%E7%94%B5%E8%84%91%E7%A1%AC%E4%BB%B6%E9%85%8D%E7%BD%AEhong-homes/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="w-100 w-30-l mb4 relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
+  <div class="mb3 pa4 gray overflow-hidden bg-white">
+    <span class="f6 db">Posts</span>
+    
+    <h1 class="f3 near-black">
+      <a href="/posts/%E7%94%B5%E8%84%91%E7%A1%AC%E4%BB%B6%E9%85%8D%E7%BD%AEhong-work/" class="link black dim">
+        
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <p>电脑硬件配置汇总
+机型：戴尔 Inspiron 3647
+处理器：Intel i5-4460 @3.20GHz（四代酷睿 Haswell）
+内存：8GB DDR3
+显卡：Intel HD Graphics 4600 核显（显存 113MB）
+存储
+固态硬盘：金士顿 SA400 120GB SSD
+机械硬盘：希捷 500GB HDD（ST500DM002）
+总容量：约 578GB，已占用 261GB
+系统：64 位 Windows（x64 架构）</p>
+    </div>
+    <a href="/posts/%E7%94%B5%E8%84%91%E7%A1%AC%E4%BB%B6%E9%85%8D%E7%BD%AEhong-work/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+    </section>
+    
+		<ul class="pagination pagination-default">
+			<li class="page-item">
+				<a href="/posts/" aria-label="First" class="page-link" role="button"><span aria-hidden="true">&laquo;&laquo;</span></a>
+			</li>
+		<li class="page-item">
+			<a href="/posts/page/2/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
+		</li>
+			<li class="page-item">
+				<a href="/posts/" aria-label="Page 1" class="page-link" role="button">1</a>
+			</li>
+			<li class="page-item">
+				<a href="/posts/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
+			</li>
+			<li class="page-item active">
+				<a aria-current="page" aria-label="Page 3" class="page-link" role="button">3</a>
+			</li>
+			<li class="page-item">
+				<a href="/posts/page/4/" aria-label="Page 4" class="page-link" role="button">4</a>
+			</li>
+		<li class="page-item">
+			<a href="/posts/page/4/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
+		</li>
+			<li class="page-item">
+				<a href="/posts/page/4/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+			</li>
+		</ul></article>
+</main><footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="https://xxx.pages.dev/" >
+    &copy;  个人博客 2026 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

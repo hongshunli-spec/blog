@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>个人博客</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Base64 的核心目的、实现手段以及名称含义一次性彻底理清：
+​1. 核心目的：为了在“纯文本环境”中安全传输二进制
+​计算机里的图片、音频、压缩包等都是二进制文件（包含大量不可见的控制字符，比如换行符、结束符等）。
+​痛点：早期的邮件系统（SMTP）、网页（HTML/JSON）、底层协议主要设计用来传输文本。如果直接把图片的二进制数据硬塞进去，有些控制字符会被系统误认为是传输指令（比如以为文件提前结束了），从而导致数据损坏、乱码。
+​目的：Base64 的诞生，就是为了把这些“奇形怪状”的二进制数据，统一转换成谁都能看懂、绝对不会出错的普通文本字符。它不是为了加密（因为任何人都能解码），而是为了安全、兼容地传输。
+​2. 主要手段：3 字节变 4 字节的“位拆分”
+​Base64 的具体实现手段可以概括为：“3变4”的二进制重组。
+​计算机里 1 个字节（Byte）= 8 个比特（Bit）。Base64 的做法是：
+​分组：每次从二进制数据中取出 3个字节（共 3 \times 8 = 24 个比特）。
+​拆分：把这 24 个比特重新平均分成 4份，每份恰好是 6个比特（4 \times 6 = 24）。
+​映射：6 个比特的二进制数，最小是 000000（十进制 0），最大是 111111（十进制 63），刚好对应 0 到 63 共 64 个数字。
+​查表：对照一张标准的 Base64 索引表，把这 4 个 0~63 的数字转换成对应的 4 个可见字符。
+​补位小细节：如果最后剩下的二进制数据不足 3 个字节怎么办？Base64 会用 0 在末尾补齐，并在最终生成的文本最后加上 = 号。所以你经常看到 Base64 字符串结尾有一个或两个 =，这就是补位的痕迹。
+​3. 名称的含义：基于 64 个安全字符基数
+​Base：在数学和计算机里是“基数”的意思（比如 Base2 是二进制，Base10 是十进制，Base16 是十六进制）。
+​64：代表这种编码方式的基数是 64，也就是说它只用 64 个精挑细选的字符来表达所有数据。
+​这 64 个字符在所有计算机系统、网络协议里都是绝对安全、不会被误解的：
+​大写字母 A-Z （26个）
+​小写字母 a-z （26个）
+​数字 0-9 （10个）
+​两个符号 &#43; 和 / （2个）
+​(加起来刚好 64 个)
+​总结
+​Base64 的本质就是：名字叫“64进制文本”，目的是“为了安全传输”，手段是“把二进制数据以 3 字节为单位，重新拆分成 4 个 6位字符”。
+​因为原本 3 个字节的数据变成了 4 个字符传输，所以编码后的体积会比原文件增加大约 33%。这也是为什么大文件通常不建议用 Base64 的原因（体积变大、传输变慢），它更适合传一些小图标或简短的数据。">
+    <meta name="generator" content="Hugo 0.163.3">
+    
+    
+    
+      <meta name="robots" content="index, follow">
+    
+    
+
+    <link rel="stylesheet" href="/ananke/css/main.02a37ad6c4e155c542d276915a0e3f83f5c7c5fec443350f6e60753f1679b7a7.css" integrity="sha256-AqN61sThVcVC0naRWg4/g/XHxf7EQzUPbmB1PxZ5t6c=" crossorigin="anonymous">
+    <script>
+  (function () {
+    "use strict";
+
+    
+    
+    function revealButtons() {
+      var buttons = document.querySelectorAll(".code-block .code-copy[hidden]");
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].hidden = false;
+      }
+    }
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", revealButtons);
+    } else {
+      revealButtons();
+    }
+
+    function flash(button) {
+      var label = button.querySelector(".code-copy-label");
+      var previous = label ? label.textContent : null;
+      button.classList.add("is-copied");
+      if (label) label.textContent = "Copied";
+      window.setTimeout(function () {
+        button.classList.remove("is-copied");
+        if (label && previous !== null) label.textContent = previous;
+      }, 2000);
+    }
+
+    function legacyCopy(text) {
+      var area = document.createElement("textarea");
+      area.value = text;
+      area.setAttribute("readonly", "");
+      area.style.position = "absolute";
+      area.style.left = "-9999px";
+      document.body.appendChild(area);
+      area.select();
+      var ok = false;
+      try {
+        ok = document.execCommand("copy");
+      } catch (e) {
+        ok = false;
+      }
+      document.body.removeChild(area);
+      return ok;
+    }
+
+    function copyFrom(button) {
+      var container = button.closest(".code-block");
+      if (!container) return;
+      var pre = container.querySelector("pre");
+      if (!pre) return;
+      var source = pre.querySelector("code") || pre;
+      var text = source.innerText;
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(
+          function () { flash(button); },
+          function () { if (legacyCopy(text)) flash(button); }
+        );
+      } else if (legacyCopy(text)) {
+        flash(button);
+      }
+    }
+
+    document.addEventListener("click", function (event) {
+      var button = event.target.closest(".code-copy");
+      if (button) copyFrom(button);
+    });
+  })();
+</script>
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="https://xxx.pages.dev/posts/base64-%E7%9A%84%E6%A0%B8%E5%BF%83%E7%9B%AE%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%89%8B%E6%AE%B5%E4%BB%A5%E5%8F%8A%E5%90%8D%E7%A7%B0%E5%90%AB%E4%B9%89%E4%B8%80%E6%AC%A1%E6%80%A7%E5%BD%BB%E5%BA%95%E7%90%86%E6%B8%85/">
+    
+
+    
+    
+    <meta property="og:url" content="https://xxx.pages.dev/posts/base64-%E7%9A%84%E6%A0%B8%E5%BF%83%E7%9B%AE%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%89%8B%E6%AE%B5%E4%BB%A5%E5%8F%8A%E5%90%8D%E7%A7%B0%E5%90%AB%E4%B9%89%E4%B8%80%E6%AC%A1%E6%80%A7%E5%BD%BB%E5%BA%95%E7%90%86%E6%B8%85/">
+	<meta property="og:site_name" content="个人博客">
+	<meta property="og:title" content="个人博客">
+	<meta property="og:description" content="Base64 的核心目的、实现手段以及名称含义一次性彻底理清： ​1. 核心目的：为了在“纯文本环境”中安全传输二进制 ​计算机里的图片、音频、压缩包等都是二进制文件（包含大量不可见的控制字符，比如换行符、结束符等）。 ​痛点：早期的邮件系统（SMTP）、网页（HTML/JSON）、底层协议主要设计用来传输文本。如果直接把图片的二进制数据硬塞进去，有些控制字符会被系统误认为是传输指令（比如以为文件提前结束了），从而导致数据损坏、乱码。 ​目的：Base64 的诞生，就是为了把这些“奇形怪状”的二进制数据，统一转换成谁都能看懂、绝对不会出错的普通文本字符。它不是为了加密（因为任何人都能解码），而是为了安全、兼容地传输。 ​2. 主要手段：3 字节变 4 字节的“位拆分” ​Base64 的具体实现手段可以概括为：“3变4”的二进制重组。 ​计算机里 1 个字节（Byte）= 8 个比特（Bit）。Base64 的做法是： ​分组：每次从二进制数据中取出 3个字节（共 3 \times 8 = 24 个比特）。 ​拆分：把这 24 个比特重新平均分成 4份，每份恰好是 6个比特（4 \times 6 = 24）。 ​映射：6 个比特的二进制数，最小是 000000（十进制 0），最大是 111111（十进制 63），刚好对应 0 到 63 共 64 个数字。 ​查表：对照一张标准的 Base64 索引表，把这 4 个 0~63 的数字转换成对应的 4 个可见字符。 ​补位小细节：如果最后剩下的二进制数据不足 3 个字节怎么办？Base64 会用 0 在末尾补齐，并在最终生成的文本最后加上 = 号。所以你经常看到 Base64 字符串结尾有一个或两个 =，这就是补位的痕迹。 ​3. 名称的含义：基于 64 个安全字符基数 ​Base：在数学和计算机里是“基数”的意思（比如 Base2 是二进制，Base10 是十进制，Base16 是十六进制）。 ​64：代表这种编码方式的基数是 64，也就是说它只用 64 个精挑细选的字符来表达所有数据。 ​这 64 个字符在所有计算机系统、网络协议里都是绝对安全、不会被误解的： ​大写字母 A-Z （26个） ​小写字母 a-z （26个） ​数字 0-9 （10个） ​两个符号 &#43; 和 / （2个） ​(加起来刚好 64 个) ​总结 ​Base64 的本质就是：名字叫“64进制文本”，目的是“为了安全传输”，手段是“把二进制数据以 3 字节为单位，重新拆分成 4 个 6位字符”。 ​因为原本 3 个字节的数据变成了 4 个字符传输，所以编码后的体积会比原文件增加大约 33%。这也是为什么大文件通常不建议用 Base64 的原因（体积变大、传输变慢），它更适合传一些小图标或简短的数据。">
+	<meta property="og:locale" content="zh_cn">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="posts">
+
+	<meta itemprop="name" content="个人博客">
+	<meta itemprop="description" content="Base64 的核心目的、实现手段以及名称含义一次性彻底理清： ​1. 核心目的：为了在“纯文本环境”中安全传输二进制 ​计算机里的图片、音频、压缩包等都是二进制文件（包含大量不可见的控制字符，比如换行符、结束符等）。 ​痛点：早期的邮件系统（SMTP）、网页（HTML/JSON）、底层协议主要设计用来传输文本。如果直接把图片的二进制数据硬塞进去，有些控制字符会被系统误认为是传输指令（比如以为文件提前结束了），从而导致数据损坏、乱码。 ​目的：Base64 的诞生，就是为了把这些“奇形怪状”的二进制数据，统一转换成谁都能看懂、绝对不会出错的普通文本字符。它不是为了加密（因为任何人都能解码），而是为了安全、兼容地传输。 ​2. 主要手段：3 字节变 4 字节的“位拆分” ​Base64 的具体实现手段可以概括为：“3变4”的二进制重组。 ​计算机里 1 个字节（Byte）= 8 个比特（Bit）。Base64 的做法是： ​分组：每次从二进制数据中取出 3个字节（共 3 \times 8 = 24 个比特）。 ​拆分：把这 24 个比特重新平均分成 4份，每份恰好是 6个比特（4 \times 6 = 24）。 ​映射：6 个比特的二进制数，最小是 000000（十进制 0），最大是 111111（十进制 63），刚好对应 0 到 63 共 64 个数字。 ​查表：对照一张标准的 Base64 索引表，把这 4 个 0~63 的数字转换成对应的 4 个可见字符。 ​补位小细节：如果最后剩下的二进制数据不足 3 个字节怎么办？Base64 会用 0 在末尾补齐，并在最终生成的文本最后加上 = 号。所以你经常看到 Base64 字符串结尾有一个或两个 =，这就是补位的痕迹。 ​3. 名称的含义：基于 64 个安全字符基数 ​Base：在数学和计算机里是“基数”的意思（比如 Base2 是二进制，Base10 是十进制，Base16 是十六进制）。 ​64：代表这种编码方式的基数是 64，也就是说它只用 64 个精挑细选的字符来表达所有数据。 ​这 64 个字符在所有计算机系统、网络协议里都是绝对安全、不会被误解的： ​大写字母 A-Z （26个） ​小写字母 a-z （26个） ​数字 0-9 （10个） ​两个符号 &#43; 和 / （2个） ​(加起来刚好 64 个) ​总结 ​Base64 的本质就是：名字叫“64进制文本”，目的是“为了安全传输”，手段是“把二进制数据以 3 字节为单位，重新拆分成 4 个 6位字符”。 ​因为原本 3 个字节的数据变成了 4 个字符传输，所以编码后的体积会比原文件增加大约 33%。这也是为什么大文件通常不建议用 Base64 的原因（体积变大、传输变慢），它更适合传一些小图标或简短的数据。">
+	<meta itemprop="wordCount" content="119">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="个人博客">
+	<meta name="twitter:description" content="Base64 的核心目的、实现手段以及名称含义一次性彻底理清： ​1. 核心目的：为了在“纯文本环境”中安全传输二进制 ​计算机里的图片、音频、压缩包等都是二进制文件（包含大量不可见的控制字符，比如换行符、结束符等）。 ​痛点：早期的邮件系统（SMTP）、网页（HTML/JSON）、底层协议主要设计用来传输文本。如果直接把图片的二进制数据硬塞进去，有些控制字符会被系统误认为是传输指令（比如以为文件提前结束了），从而导致数据损坏、乱码。 ​目的：Base64 的诞生，就是为了把这些“奇形怪状”的二进制数据，统一转换成谁都能看懂、绝对不会出错的普通文本字符。它不是为了加密（因为任何人都能解码），而是为了安全、兼容地传输。 ​2. 主要手段：3 字节变 4 字节的“位拆分” ​Base64 的具体实现手段可以概括为：“3变4”的二进制重组。 ​计算机里 1 个字节（Byte）= 8 个比特（Bit）。Base64 的做法是： ​分组：每次从二进制数据中取出 3个字节（共 3 \times 8 = 24 个比特）。 ​拆分：把这 24 个比特重新平均分成 4份，每份恰好是 6个比特（4 \times 6 = 24）。 ​映射：6 个比特的二进制数，最小是 000000（十进制 0），最大是 111111（十进制 63），刚好对应 0 到 63 共 64 个数字。 ​查表：对照一张标准的 Base64 索引表，把这 4 个 0~63 的数字转换成对应的 4 个可见字符。 ​补位小细节：如果最后剩下的二进制数据不足 3 个字节怎么办？Base64 会用 0 在末尾补齐，并在最终生成的文本最后加上 = 号。所以你经常看到 Base64 字符串结尾有一个或两个 =，这就是补位的痕迹。 ​3. 名称的含义：基于 64 个安全字符基数 ​Base：在数学和计算机里是“基数”的意思（比如 Base2 是二进制，Base10 是十进制，Base16 是十六进制）。 ​64：代表这种编码方式的基数是 64，也就是说它只用 64 个精挑细选的字符来表达所有数据。 ​这 64 个字符在所有计算机系统、网络协议里都是绝对安全、不会被误解的： ​大写字母 A-Z （26个） ​小写字母 a-z （26个） ​数字 0-9 （10个） ​两个符号 &#43; 和 / （2个） ​(加起来刚好 64 个) ​总结 ​Base64 的本质就是：名字叫“64进制文本”，目的是“为了安全传输”，手段是“把二进制数据以 3 字节为单位，重新拆分成 4 个 6位字符”。 ​因为原本 3 个字节的数据变成了 4 个字符传输，所以编码后的体积会比原文件增加大约 33%。这也是为什么大文件通常不建议用 Base64 的原因（体积变大、传输变慢），它更适合传一些小图标或简短的数据。">
+
+      
+      
+    
+	
+  </head><body class="ma0 avenir bg-near-white production is-page is-page page-Base64 的核心目的、实现手段以及名称含义一次性彻底理清">
+   
+  
+
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        个人博客
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+<main class="pb7" role="main">
+  
+
+  <article class="page-Base64 的核心目的、实现手段以及名称含义一次性彻底理清 flex-l mw7 center ph3 flex-wrap justify-between">
+    <header class="mt4 w-100"><aside class="instapaper_ignoref b helvetica tracked ttu">
+    <a class="link dim" href="https://xxx.pages.dev/posts/">Posts</a>
+  </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1"></h1>
+      
+      
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-100-l"><p>Base64 的核心目的、实现手段以及名称含义一次性彻底理清：
+​1. 核心目的：为了在“纯文本环境”中安全传输二进制
+​计算机里的图片、音频、压缩包等都是二进制文件（包含大量不可见的控制字符，比如换行符、结束符等）。
+​痛点：早期的邮件系统（SMTP）、网页（HTML/JSON）、底层协议主要设计用来传输文本。如果直接把图片的二进制数据硬塞进去，有些控制字符会被系统误认为是传输指令（比如以为文件提前结束了），从而导致数据损坏、乱码。
+​目的：Base64 的诞生，就是为了把这些“奇形怪状”的二进制数据，统一转换成谁都能看懂、绝对不会出错的普通文本字符。它不是为了加密（因为任何人都能解码），而是为了安全、兼容地传输。
+​2. 主要手段：3 字节变 4 字节的“位拆分”
+​Base64 的具体实现手段可以概括为：“3变4”的二进制重组。
+​计算机里 1 个字节（Byte）= 8 个比特（Bit）。Base64 的做法是：
+​分组：每次从二进制数据中取出 3个字节（共 3 \times 8 = 24 个比特）。
+​拆分：把这 24 个比特重新平均分成 4份，每份恰好是 6个比特（4 \times 6 = 24）。
+​映射：6 个比特的二进制数，最小是 000000（十进制 0），最大是 111111（十进制 63），刚好对应 0 到 63 共 64 个数字。
+​查表：对照一张标准的 Base64 索引表，把这 4 个 0~63 的数字转换成对应的 4 个可见字符。
+​补位小细节：如果最后剩下的二进制数据不足 3 个字节怎么办？Base64 会用 0 在末尾补齐，并在最终生成的文本最后加上 = 号。所以你经常看到 Base64 字符串结尾有一个或两个 =，这就是补位的痕迹。
+​3. 名称的含义：基于 64 个安全字符基数
+​Base：在数学和计算机里是“基数”的意思（比如 Base2 是二进制，Base10 是十进制，Base16 是十六进制）。
+​64：代表这种编码方式的基数是 64，也就是说它只用 64 个精挑细选的字符来表达所有数据。
+​这 64 个字符在所有计算机系统、网络协议里都是绝对安全、不会被误解的：
+​大写字母 A-Z （26个）
+​小写字母 a-z （26个）
+​数字 0-9 （10个）
+​两个符号 + 和 / （2个）
+​(加起来刚好 64 个)
+​总结
+​Base64 的本质就是：名字叫“64进制文本”，目的是“为了安全传输”，手段是“把二进制数据以 3 字节为单位，重新拆分成 4 个 6位字符”。
+​因为原本 3 个字节的数据变成了 4 个字符传输，所以编码后的体积会比原文件增加大约 33%。这也是为什么大文件通常不建议用 Base64 的原因（体积变大、传输变慢），它更适合传一些小图标或简短的数据。</p>
+<ul class="pa0">
+  
+</ul><ul class="pa0">
+  
+</ul>
+
+      
+    </div></article>
+</main><footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="https://xxx.pages.dev/" >
+    &copy;  个人博客 2026 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -20,5 +20,250 @@
 				<guid>https://xxx.pages.dev/posts/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</guid>
 				<description></description>
 			</item>
+			<item>
+				<title></title>
+				<link>https://xxx.pages.dev/posts/2.5b/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://xxx.pages.dev/posts/2.5b/</guid>
+				<description>&lt;p&gt;纠正：是 2.5B，不是2.5D&#xA;1B=10亿 → &lt;strong&gt;2.5B＝25亿参数＝AI的脑神经元突触总量（脑容量）&lt;/strong&gt;✅&lt;/p&gt;&#xA;&lt;p&gt;三个大白话拆分&lt;/p&gt;&#xA;&lt;p&gt;1. 25亿参数（2.5B）=脑子大小&#xA;数字越多越聪明，擅长推理、写文案、改笔记；25亿属于小型模型，电脑本地就能跑。&#xA;2. 上下文窗口=瞬时记忆力&#xA;比如128K上下文：一次性读几万字笔记，和脑容量无关，小模型也能做大窗口。&#xA;3. 训练数据=一辈子读过的书&#xA;几百亿、上万亿文字，远大于25亿。&lt;/p&gt;&#xA;&lt;p&gt;速记&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;XXB：脑多大&lt;/li&gt;&#xA;&lt;li&gt;XXK：一次能看多少字&lt;/li&gt;&#xA;&lt;li&gt;训练集：读过多少书 2.5B，不是2.5D&#xA;1B=10亿 → &lt;strong&gt;2.5B＝25亿参数＝AI的脑神经元突触总量（脑容量）&lt;/strong&gt;✅&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;三个大白话拆分&lt;/p&gt;&#xA;&lt;p&gt;1. 25亿参数（2.5B）=脑子大小&#xA;数字越多越聪明，擅长推理、写文案、改笔记；25亿属于小型模型，电脑本地就能跑。&#xA;2. 上下文窗口=瞬时记忆力&#xA;比如128K上下文：一次性读几万字笔记，和脑容量无关，小模型也能做大窗口。&#xA;3. 训练数据=一辈子读过的书&#xA;几百亿、上万亿文字，远大于25亿。&lt;/p&gt;&#xA;&lt;p&gt;速记&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;XXB：脑多大&lt;/li&gt;&#xA;&lt;li&gt;XXK：一次能看多少字&lt;/li&gt;&#xA;&lt;li&gt;训练集：读过多少书&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://xxx.pages.dev/posts/ai%E8%B0%83%E6%95%99/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://xxx.pages.dev/posts/ai%E8%B0%83%E6%95%99/</guid>
+				<description>&lt;p&gt;ai调教&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;语言：始终使用中文回复。&lt;/li&gt;&#xA;&lt;li&gt;态度：保持绝对客观与真实，拒绝谄媚，如果用户的提问前提有误，请直接指出。&lt;/li&gt;&#xA;&lt;li&gt;工具：遇到不懂的概念或时效性信息，必须使用 思考模型，不要用快速模型。&#xA;当收到问题时，请按以下步骤处理：&lt;/li&gt;&#xA;&lt;li&gt;第一性原理拆解：分析问题的本质核心。&lt;/li&gt;&#xA;&lt;li&gt;多视角推演（仅针对复杂问题）：自动匹配 2-3 个相关领域的专家角色，分别模拟这些角色的视角进行推演，综合各方观点，摒弃冲突，提炼共识。&lt;/li&gt;&#xA;&lt;li&gt;批判性评估：任何方案必须包含“优势”与“劣势（风险）”分析。&lt;/li&gt;&#xA;&lt;li&gt;概率表达：避免模糊词汇（如“大概率”），尽量基于数据或逻辑给出“置信度评级（高/中/低）”，只有在有确切数据支持时，才提供具体百分比，否则请说明估算的逻辑依据。&#xA;Quality Control 在输出前进行自我审核：&lt;/li&gt;&#xA;&lt;li&gt;是否偏离了用户的主题？&lt;/li&gt;&#xA;&lt;li&gt;内容是否包含事实性错误？&lt;/li&gt;&#xA;&lt;li&gt;逻辑链条是否闭环？&#xA;Output Format&#xA;请利用 Markdown 语法优化阅读体验：&lt;/li&gt;&#xA;&lt;li&gt;使用 ## 区分板块。&lt;/li&gt;&#xA;&lt;li&gt;关键结论使用 加粗。&lt;/li&gt;&#xA;&lt;li&gt;复杂逻辑使用列表或表格对比&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://xxx.pages.dev/posts/base64-%E7%9A%84%E6%A0%B8%E5%BF%83%E7%9B%AE%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%89%8B%E6%AE%B5%E4%BB%A5%E5%8F%8A%E5%90%8D%E7%A7%B0%E5%90%AB%E4%B9%89%E4%B8%80%E6%AC%A1%E6%80%A7%E5%BD%BB%E5%BA%95%E7%90%86%E6%B8%85/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://xxx.pages.dev/posts/base64-%E7%9A%84%E6%A0%B8%E5%BF%83%E7%9B%AE%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%89%8B%E6%AE%B5%E4%BB%A5%E5%8F%8A%E5%90%8D%E7%A7%B0%E5%90%AB%E4%B9%89%E4%B8%80%E6%AC%A1%E6%80%A7%E5%BD%BB%E5%BA%95%E7%90%86%E6%B8%85/</guid>
+				<description>&lt;p&gt;Base64 的核心目的、实现手段以及名称含义一次性彻底理清：&#xA;​1. 核心目的：为了在“纯文本环境”中安全传输二进制&#xA;​计算机里的图片、音频、压缩包等都是二进制文件（包含大量不可见的控制字符，比如换行符、结束符等）。&#xA;​痛点：早期的邮件系统（SMTP）、网页（HTML/JSON）、底层协议主要设计用来传输文本。如果直接把图片的二进制数据硬塞进去，有些控制字符会被系统误认为是传输指令（比如以为文件提前结束了），从而导致数据损坏、乱码。&#xA;​目的：Base64 的诞生，就是为了把这些“奇形怪状”的二进制数据，统一转换成谁都能看懂、绝对不会出错的普通文本字符。它不是为了加密（因为任何人都能解码），而是为了安全、兼容地传输。&#xA;​2. 主要手段：3 字节变 4 字节的“位拆分”&#xA;​Base64 的具体实现手段可以概括为：“3变4”的二进制重组。&#xA;​计算机里 1 个字节（Byte）= 8 个比特（Bit）。Base64 的做法是：&#xA;​分组：每次从二进制数据中取出 3个字节（共 3 \times 8 = 24 个比特）。&#xA;​拆分：把这 24 个比特重新平均分成 4份，每份恰好是 6个比特（4 \times 6 = 24）。&#xA;​映射：6 个比特的二进制数，最小是 000000（十进制 0），最大是 111111（十进制 63），刚好对应 0 到 63 共 64 个数字。&#xA;​查表：对照一张标准的 Base64 索引表，把这 4 个 0~63 的数字转换成对应的 4 个可见字符。&#xA;​补位小细节：如果最后剩下的二进制数据不足 3 个字节怎么办？Base64 会用 0 在末尾补齐，并在最终生成的文本最后加上 = 号。所以你经常看到 Base64 字符串结尾有一个或两个 =，这就是补位的痕迹。&#xA;​3. 名称的含义：基于 64 个安全字符基数&#xA;​Base：在数学和计算机里是“基数”的意思（比如 Base2 是二进制，Base10 是十进制，Base16 是十六进制）。&#xA;​64：代表这种编码方式的基数是 64，也就是说它只用 64 个精挑细选的字符来表达所有数据。&#xA;​这 64 个字符在所有计算机系统、网络协议里都是绝对安全、不会被误解的：&#xA;​大写字母 A-Z （26个）&#xA;​小写字母 a-z （26个）&#xA;​数字 0-9 （10个）&#xA;​两个符号 + 和 / （2个）&#xA;​(加起来刚好 64 个)&#xA;​总结&#xA;​Base64 的本质就是：名字叫“64进制文本”，目的是“为了安全传输”，手段是“把二进制数据以 3 字节为单位，重新拆分成 4 个 6位字符”。&#xA;​因为原本 3 个字节的数据变成了 4 个字符传输，所以编码后的体积会比原文件增加大约 33%。这也是为什么大文件通常不建议用 Base64 的原因（体积变大、传输变慢），它更适合传一些小图标或简短的数据。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://xxx.pages.dev/posts/cidr-%E8%A7%A3%E9%87%8A/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://xxx.pages.dev/posts/cidr-%E8%A7%A3%E9%87%8A/</guid>
+				<description>&lt;p&gt;CIDR 解释&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;字面定义&#xA;CIDR：Classless Inter-Domain Routing，无类别域间路由，是现代 IP 地址划分与路由汇总的标准规则，替代传统==有类 IP 划分==（A/B/C 类地址）。&lt;/li&gt;&#xA;&lt;li&gt;本质逻辑&#xA;不再按固定 A/B/C 类切割网段，改用IP 地址 + 前缀长度灵活划分子网、合并路由，减少地址浪费、缩小路由表规模。&#xA;格式：IP地址/前缀位数，例：192.168.1.0/24。&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://xxx.pages.dev/posts/cipher%E5%AF%86%E7%A0%81--%E6%9A%97%E5%8F%B7-%E8%BF%99%E4%B8%AA%E8%AF%8D%E6%88%91%E4%BB%AC%E5%8F%AF%E4%BB%A5%E4%BB%8E%E5%AE%83%E7%9A%84%E5%8F%91/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://xxx.pages.dev/posts/cipher%E5%AF%86%E7%A0%81--%E6%9A%97%E5%8F%B7-%E8%BF%99%E4%B8%AA%E8%AF%8D%E6%88%91%E4%BB%AC%E5%8F%AF%E4%BB%A5%E4%BB%8E%E5%AE%83%E7%9A%84%E5%8F%91/</guid>
+				<description>&lt;p&gt;记忆 Cipher（密码 / 暗号） 这个词，我们可以从它的发音、词源、以及实际应用场景来多维度联想。以下为你整理的“全方位记忆法”，帮你彻底搞定这个词：&#xA;​1. 谐音记忆法（最快建立联系）&#xA;​读音： [&amp;lsquo;saɪfə(r)] （赛弗 / 晒服）&#xA;​趣味联想： * “赛弗” \rightarrow 赛车手“赛”在“弗”（福）地，手握暗号才允许通行。&#xA;​“晒服” \rightarrow 游戏里要在公频“晒”出自己的神“装（服）”，必须输入一串密码。&#xA;​2. 词源与拆解记忆（理解核心本质）&#xA;​词源故事： 这个词最早源于阿拉伯语 sifr，意思是“零”（Zero）。在古代，欧洲人觉得阿拉伯数字（尤其是“零”这个概念）神秘莫测，像是一种隐藏的记号。后来，这个词就演变成了“暗号、密码”或“计算 / 破译”的意思。&#xA;​字形联想： C（See 看到）+ I（我）+ pher（Phone 手机）\rightarrow 看到我的手机，必须输密码（Cipher）。&#xA;​3. 技术与生活场景联想（加深学术/技术印象）&#xA;​如果你在计算机、网络或日常生活中遇到它，它通常以这些面孔出现：&#xA;​Ciphertext（密文）： 经过加密后的那些看不懂的乱码（对应 Plaintext 明文）。&#xA;​Cipher Suite（加密套件）： 网络安全（如 HTTPS/TLS）中经常提到的一套网络加密算法组合。&#xA;​Block Cipher / Stream Cipher： 分组密码 / 流密码（对称加密中的核心概念）。&#xA;​4. 经典例句（在语境中巩固）&#xA;​The heavy encryption uses a complex cipher to protect data.&#xA;（这种强加密使用了一种复杂的密码来保护数据。）&#xA;​They managed to crack the enemy&amp;rsquo;s secret cipher.&#xA;（他们成功破译了敌人的机密暗号。）&#xA;​💡 终极一句话记忆：&#xA;​“赛弗（Cipher）手持暗号，输入密码通关。”&#xA;​试着闭上眼睛念三遍：Cipher - 密码 - 赛弗。你现在脑海里浮现的是哪个画面？&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://xxx.pages.dev/posts/clash-verge-rev-meta-%E5%91%BD%E5%90%8D%E9%80%9F%E8%AE%B0/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://xxx.pages.dev/posts/clash-verge-rev-meta-%E5%91%BD%E5%90%8D%E9%80%9F%E8%AE%B0/</guid>
+				<description>&lt;p&gt;Clash Verge Rev (Meta) 命名速记&#xA;​Clash /klæʃ/：本意是**“冲突/分流”&lt;strong&gt;。网络代理软件的鼻祖，负责处理网络规则冲突。(注意：不是表示死机的 Crash)。&#xA;​Verge /vɜːrdʒ/：本意是&lt;/strong&gt;“边缘”&lt;strong&gt;。源自短语 on the verge of，代表软件诞生于老项目濒临停更的动荡边缘。&#xA;​Rev /rev/：代表&lt;/strong&gt;“翻新版 (Revision)”&lt;strong&gt;。新团队接手后，对老版本进行全面修复和技术大进化的终极修订版。&#xA;​Meta /ˈmetə/：本意是&lt;/strong&gt;“超越/高级”。代表这是超越普通版、功能更强、速度更快的“威力加强版”**内核。&#xA;​一句顺口溜背诵：&#xA;​Clash 分流，诞生于断代边缘 (Verge)；&#xA;Meta 加强，新团队翻新 (Rev) 称王。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://xxx.pages.dev/posts/npm%E5%85%A8%E7%A7%B0node-package-manager/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://xxx.pages.dev/posts/npm%E5%85%A8%E7%A7%B0node-package-manager/</guid>
+				<description>&lt;p&gt;1. npm全称：Node Package Manager（Node包管理器）&#xA;2. 提供者：随Node.js一体安装，Node官方自带工具&#xA;3. npm i = npm install 缩写，作用安装依赖包&#xA;4. Windows完整支持，装完Node自动带npm命令&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://xxx.pages.dev/posts/pos-%E5%85%A8%E7%A7%B0packet-over-sonetsdh/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://xxx.pages.dev/posts/pos-%E5%85%A8%E7%A7%B0packet-over-sonetsdh/</guid>
+				<description>&lt;p&gt;POS 全称：Packet Over SONET/SDH&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;字面含义&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;POS = 分组数据承载在 SONET/SDH 同步传输线路上。&#xA;简单说：把IP、以太网这类数据包，封装进SDH/SONET帧传输，是路由器常用广域光接口技术。&lt;/p&gt;&#xA;&lt;ol start=&#34;2&#34;&gt;&#xA;&lt;li&gt;核心作用&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;传统SDH/SONET设计传语音电路（TDM时隙）；POS改造后用来传IP分组，实现骨干网长距离高速互联。&#xA;对应接口就是常说的 POS口，常见速率：OC-3/STM-1、OC-12/STM-4、OC-48/STM-16。&lt;/p&gt;&#xA;&lt;ol start=&#34;3&#34;&gt;&#xA;&lt;li&gt;封装标准&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;主流两种封装：&lt;/p&gt;&#xA;&lt;p&gt;1. PPP over SONET/SDH（PPP/POS）：行业最通用&#xA;2. HDLC over SONET/SDH：思科设备默认HDLC封装&lt;/p&gt;&#xA;&lt;ol start=&#34;4&#34;&gt;&#xA;&lt;li&gt;和STM-1/OC-3的关系&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;STM-1(SDH) / OC-3(SONET) 是底层光传输物理层标准；&lt;/li&gt;&#xA;&lt;li&gt;POS 是跑在这层之上的数据承载协议；&lt;/li&gt;&#xA;&lt;li&gt;设备上同一个光口标注 POS STM-1/OC-3，端口可切换SDH或SONET时钟帧模式。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;ol start=&#34;5&#34;&gt;&#xA;&lt;li&gt;关键特点&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;1. 同步时钟：依托SDH/SONET高精度同步时钟，传输稳定、时延低；&#xA;2. 长距离：单模光纤几十~上百公里骨干传输；&#xA;3. 带宽固定：OC3=155M、OC12=622M，带宽刚性，适合运营商骨干；&#xA;4. 区分光口：POS口≠普通光口，普通千兆光口是以太网，POS是同步传输体制，底层帧结构完全不同，不能直连互通。&lt;/p&gt;&#xA;&lt;ol start=&#34;6&#34;&gt;&#xA;&lt;li&gt;典型使用场景&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;运营商骨干路由器、省际核心互联、传统金融专线、旧政企高速专线。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://xxx.pages.dev/posts/quic/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://xxx.pages.dev/posts/quic/</guid>
+				<description>&lt;p&gt;&lt;strong&gt;QUIC（Quick UDP Internet Connections）是谷歌推出的基于 UDP 的新一代传输层协议，核心优势就是相比 TCP 显著降低延迟&lt;/strong&gt;，现已成为 HTTP/3 的底层标准协议。&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;核心信息权威验证&#34;&gt;核心信息（权威验证）&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;全称：&lt;strong&gt;Quick UDP Internet Connections&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;提出方：&lt;strong&gt;Google&lt;/strong&gt;（后由 IETF 标准化为 RFC 9000）&lt;/li&gt;&#xA;&lt;li&gt;底层：基于&lt;strong&gt;UDP&lt;/strong&gt;实现&lt;/li&gt;&#xA;&lt;li&gt;定位：替代&lt;strong&gt;TCP+TLS+HTTP/2&lt;/strong&gt;的综合传输方案&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://xxx.pages.dev/posts/sudo--i/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://xxx.pages.dev/posts/sudo--i/</guid>
+				<description>&lt;p&gt; sudo -i &lt;/p&gt;&#xA;&lt;p&gt;全称：login（登录式shell）&lt;/p&gt;&#xA;&lt;p&gt;1.  sudo -i  = 以root身份完整登录root环境&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;加载root的环境变量、PATH、家目录 /root &lt;/li&gt;&#xA;&lt;li&gt;提示符从  $  →  # ，变成root终端&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;2. 对比：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt; sudo 命令 ：只单条临时权限，用户环境不变、提示符还是 $ &lt;/li&gt;&#xA;&lt;li&gt; sudo -i ：整段切换root，用完敲  exit  退回去&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;简写记忆：i = login登录。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://xxx.pages.dev/posts/throttle%E8%8A%82%E6%B5%81-%E8%BF%99%E4%B8%AA%E8%AF%8D%E7%AE%80%E7%9B%B4%E5%A4%A9%E5%A4%A9%E8%A7%81%E5%9C%A8%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%88%86%E5%B8%83/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://xxx.pages.dev/posts/throttle%E8%8A%82%E6%B5%81-%E8%BF%99%E4%B8%AA%E8%AF%8D%E7%AE%80%E7%9B%B4%E5%A4%A9%E5%A4%A9%E8%A7%81%E5%9C%A8%E7%BD%91%E7%BB%9C%E5%B7%A5%E7%A8%8B%E5%88%86%E5%B8%83/</guid>
+				<description>&lt;p&gt;Throttle（节流） 这个词简直天天见。在网络工程、分布式系统、前端开发、甚至汽车硬件里都有它的身影。&#xA;​为了帮你轻松且牢固地记住它，我们从核心画面、联想拆解和技术场景三个维度来攻克：&#xA;​1. 核心画面：扼住命运的咽喉&#xA;​字面本意：作为动词是**“使窒息、掐死”，作为名词是“油门、节气门”&lt;strong&gt;（比如你开电动车、开汽车时控制流量的那个油门阀门）。&#xA;​核心动作：卡脖子，控制流量，不让它一下子全冲出来。&#xA;​2. 谐音与联想记忆（5秒速记）&#xA;​💡 联想：“死肉头” (Throttle)&#xA;或者是 “死死（Thr-）掐住（-ottle，接近bottle瓶口）”。&#xA;​想象你死死掐住一个水瓶子（bottle）的脖子，不让水流得太快。这就叫 Throttle（节流、限制）。&#xA;​3. 技术人的高频实战场景&#xA;​在你的专业或日常技术领域中，它通常有两种形态：&#xA;​🌐 场景 A：网络与后端 —— 限流 / 速率限制 (Rate Limiting)&#xA;​在服务器或网络规划中，为了防止某个IP或突发流量把带宽、CPU冲垮，我们会设置 Throttling 机制。&#xA;​举个例子：API 接口限制“每分钟最多访问 60 次”，超过的请求就被 throttled（被拦截或排队）了。&#xA;​💻 场景 B：前端与系统逻辑 —— 节流 (Throttling)&#xA;​在处理高频事件（比如鼠标滚动、窗口缩放、日志持续打印）时，如果每次触发都执行代码，系统会卡死。&#xA;​解决方案：Throttle（节流）。不管你触发得有多快，我规定每 500 毫秒只执行一次。&#xA;​对比防抖 (Debounce)：&#xA;​Debounce（防抖）：你一直打字我就不触发，等你停手了，我再触发（像电梯门，有人来就重新等）。&#xA;​Throttle（节流）：你尽管持续触发，但我按固定频率（如每秒一次）雷打不动地执行（像红绿灯，按固定周期放行）。&#xA;​4. 常用词组搭配&#xA;​Throttling policy：限流策略 / 节流策略&#xA;​Bandwidth throttling：带宽限速（运营商看你下载太多，悄悄限制你网速）&#xA;​CPU throttling：CPU 降频（手机或电脑太热了，系统强制给 CPU 减速散热）&#xA;​总结一句话：看到 Throttle，脑子里就演练一下&lt;/strong&gt;“掐住瓶颈、控制流速”**的画面。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://xxx.pages.dev/posts/tlstransport-layer-security%E4%BC%A0/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://xxx.pages.dev/posts/tlstransport-layer-security%E4%BC%A0/</guid>
+				<description>&lt;p&gt;TLS（Transport Layer Security，传输层安全协议），是互联网上应用最广泛的安全加密协议。&#xA;​简单来说，它的核心任务就是：为你在互联网上的通信穿上一件“防弹衣”，确保你发送和接收的数据不被窃听、不被篡改、不被冒充。&#xA;​我们每天浏览网页时，网址开头的 https:// 中的那个 “S”（Secure），底层就是由 TLS 在默默守护。（注：它的前身是著名的 SSL，虽然现在大家都叫 TLS，但很多人还是习惯把它们统称为 SSL/TLS）。&#xA;​一、 TLS 到底解决了什么问题？&#xA;​在没有 TLS 之前（比如早期的 HTTP 时代），网络传输就像是寄明信片，中间任何一个邮差（路由器、运营商、黑客）都能偷看内容。TLS 解决了网络通信的三大安全难题：&#xA;​机密性（Confidentiality）—— 防偷看&#xA;所有传输的数据都会被加密。即使黑客在半路拦截了你的数据，看到的也只是一堆无法破译的乱码（密文）。&#xA;​完整性（Integrity）—— 防篡改&#xA;TLS 包含校验机制。一旦数据在传输过程中被第三方偷偷修改或丢包，接收方能立刻察觉并拒绝接收。&#xA;​身份认证（Authentication）—— 防冒充&#xA;通过数字证书机制，确保你访问的“淘宝”确实是官方的淘宝，而不是黑客搭建的钓鱼网站。&#xA;​二、 TLS 是如何工作的？（经典“握手”流程）&#xA;​当你的浏览器访问一个 HTTPS 网站时，双方需要先进行一场“技术相亲”，这个过程被称为 TLS 握手（TLS Handshake）。&#xA;​在目前最主流的 TLS 1.3 协议中，这个过程只需要 1个往返（1-RTT） 就能搞定，主要分为以下几个步骤：&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://xxx.pages.dev/posts/totp/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://xxx.pages.dev/posts/totp/</guid>
+				<description>&lt;p&gt;TOTP&#xA;= Time-Based One-Time Password，基于时间的一次性密码（RFC 6238）&#xA;精妙点一句话：用天然同步的时间替代手动计数器，离线可用、短时过期防盗用，算法通用易落地。&#xA;TOTP 防的是密码被盗、验证码被偷窥，唯独不防你主动把核心密钥送给别人&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://xxx.pages.dev/posts/mime-multipurpose-internet-mail-extensions/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://xxx.pages.dev/posts/mime-multipurpose-internet-mail-extensions/</guid>
+				<description>&lt;p&gt;MIME 彻底理清：&#xA;​1. 核心目的：让原本只能发“纯文本”的邮件，能够发送图片、音视频和附件&#xA;​早期的互联网世界非常简陋，电子邮件（SMTP 协议）在设计之初，只支持传输英文字符（7位 ASCII 码）。这意味着你只能给别人发纯英文的信件，连中文都没法发，更别提发送图片、音乐或 Word 文档了。&#xA;​痛点：用户迫切需要通过邮件发送丰富的内容（多媒体、多语言、附件），但现有的邮件系统架构已经定死，无法直接识别这些复杂的二进制文件。&#xA;​目的：MIME 的诞生，就是为了在不彻底重构全球邮件系统的基础上，对邮件协议进行扩展。它定义了一套标准，告诉收发双方：这封邮件里不仅仅有文字，还藏着什么类型的文件，应该怎么去解析它。&#xA;​2. 主要手段：头信息宣告 + 数据编码（Base64/Quoted-printable）&#xA;​MIME 的实现手段非常巧妙，它就像是在一封信的信封和信件内部加了**“特殊的标签”**。主要通过以下两个手段实现：&#xA;​① 在邮件头（Header）中增加 MIME 标签&#xA;​MIME 在邮件的头部引入了几个关键字段，最核心的是 Content-Type（内容类型）。它用一种统一的格式来标记文件的属性，格式为 大类/小类。&#xA;​Content-Type: image/jpeg （告诉接收方：这是一个 JPEG 图片）&#xA;​Content-Type: application/pdf （告诉接收方：这是一个 PDF 文档）&#xA;​Content-Type: text/html （告诉接收方：这是一段网页代码，请渲染它）&#xA;​② 结合编码技术（如 Base64）进行打包&#xA;​光打标签还不够，二进制数据依然无法直接在纯文本网络里传输。这时候 MIME 就会指定一种编码方式（通过 Content-Transfer-Encoding 字段）。&#xA;​如果是图片或附件，MIME 就会调用我们刚才讲的 Base64 编码，把图片变成一堆安全的文本字符，塞进邮件正文里。&#xA;​邮件送到对方手里后，对方的客户端（比如 Outlook 或 Gmail）看到 MIME 的标签，就知道“哦！这堆乱七八糟的文本其实是一张用 Base64 编码的 JPEG 图片”，于是自动把它解码，还原成图片展示出来。&#xA;​3. 名称的含义：多用途互联网邮件扩展&#xA;​MIME 的全称是：Multipurpose Internet Mail Extensions。&#xA;​Multipurpose（多用途）：表示它不再局限于最初的“纯英文文本”，而是可以处理文字、图片、音频、视频、应用程序等各种用途的数据。&#xA;​Internet Mail（互联网邮件）：说明了它的出生背景，最初就是为了解决电子邮件的传输限制而设计的。&#xA;​Extensions（扩展）：强调它是在老旧的 SMTP 邮件协议基础上，做的一层“外挂式”的兼容性扩展。&#xA;​延伸：MIME 的今天&#xA;​虽然 MIME 最早是为电子邮件量身定制的，但因为它的 Content-Type（媒体类型定义）设计得实在太成功了，以至于后来整个万维网（Web/HTTP 协议）都直接继承了这一套标准。&#xA;​现在你用浏览器上网，服务器传给浏览器的每一个网页、每一张图片、每一个 API 接口数据，返回的 HTTP 响应头里都带着 MIME 类型（比如 Content-Type: application/json）。它已经从一个“邮件扩展协议”，变成了整个互联网多媒体类型的通用基石。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://xxx.pages.dev/posts/%E5%9B%BD%E5%AE%B6%E7%BA%A7%E5%B7%A5%E7%A8%8B%E7%9A%84%E6%BC%94%E8%BF%9B%E5%8F%B2%E4%BB%A5%E5%8F%8A%E6%B5%B7%E5%BA%B7%E5%A8%81%E8%A7%86%E5%A6%82%E4%BD%95%E5%80%9F%E6%AD%A4%E6%88%90%E4%B8%BA%E5%85%A8%E7%90%83%E5%AE%89%E9%98%B2%E5%B7%A8%E5%A4%B4/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://xxx.pages.dev/posts/%E5%9B%BD%E5%AE%B6%E7%BA%A7%E5%B7%A5%E7%A8%8B%E7%9A%84%E6%BC%94%E8%BF%9B%E5%8F%B2%E4%BB%A5%E5%8F%8A%E6%B5%B7%E5%BA%B7%E5%A8%81%E8%A7%86%E5%A6%82%E4%BD%95%E5%80%9F%E6%AD%A4%E6%88%90%E4%B8%BA%E5%85%A8%E7%90%83%E5%AE%89%E9%98%B2%E5%B7%A8%E5%A4%B4/</guid>
+				<description>&lt;p&gt;“国家级工程的演进史”以及“海康威视如何借此成为全球安防巨头”，这里的历史厚重感、博弈和戏剧性，确实比单纯拆解一个后台软件更能震慑全场。&#xA;​在饭局上，你可以把“金盾、天网、雪亮”的递进，以及海康威视的崛起，串成下面这 3 个递进式的特级谈资：&#xA;​1. 20年监控进化史：&lt;strong&gt;从“管电脑”到“管农村”的三个时代&lt;/strong&gt;&#xA;​别人只知道到处是摄像头，你可以直接给出这三个国家级工程的标志性时间点和本质区别，显得极为专业：&#xA;​金盾工程（1998&lt;del&gt;2005）——“打底座”：那是互联网刚普及的时代，核心是建公安内部网、全国人口数据库、身份证查验系统以及防火长城（GFW）。这个阶段主要管的是“数据和电脑”。&#xA;​天网工程（2005&lt;/del&gt;2015）——“看城市”：随着 2005 年“3111试点工程”启动，正式进入城市视频监控时代。核心是把城市的主干道、出入口、公共场所用摄像头连成网，做到“让领导坐在指挥中心能看清全市路口”。&#xA;​雪亮工程（2015~至今）——“盯农村”：城市连完网了，盲区在农村。“雪亮”取自“群众的眼睛是雪亮的”，核心是“全域覆盖”，把摄像头直接架到乡村的村口、农田、主要道路，甚至把村民家里的电视机、手机变成监控终端，实现全民盯防。&#xA;​2. 52所出来的“28罗汉”：海康威视的国资大厂逆袭剧本&#xA;​聊到海康威视，别人只知道它是全球最大的安防公司，你可以讲讲它的出身背景，非常富有传奇色彩：&#xA;​海康威视根本不是什么草根创业公司，它的前身是中国电子科技集团第52研究所（中电五子之一，位于杭州）。&#xA;​2001年，52研究所里的28位核心工程师（俗称海康28罗汉）决定下海，顶着国资背景成立了海康威视。当时他们极其聪明地押注了一个极为底层的东西——音视频数字压缩板卡（==MPEG-4== 编码）。当时市面上的监控录像不仅画质像马赛克，而且录一天硬盘就爆了。海康靠着 52 所的硬核技术，把录像体积压缩了数倍还能保持清晰，直接一炮而红，拿下了全国数字化监控转型的第一桶金。&#xA;​3. 海康与“天网”的疯狂共生：如何用两场危机砸出全球第一？&#xA;​海康威视能成长为世界级巨头，完全是踩中了国家工程的超级红利期，并经历了两次关键跨越：&#xA;​2005年“科技强警”红利：2005年国家启动“天网工程”前身的试点，海康威视当时敏锐地从“只卖后端板卡”转型为“自己做前端摄像头”。结果国家砸下千亿级资金建设天网，海康作为国家队，顺理成章地吞下了全国各省市公安大楼、十字路口铺天盖地的摄像头订单，直接被天网工程的巨额奶水喂成了巨无霸。&#xA;​2016年“雪亮工程”的智能化AI红利：到了雪亮工程和智能化时代，摄像头不仅要看得到，还要能识别“你是谁”。海康威视大手笔砸向深度学习，推出“深眸”等==AI摄像头==，直接把人脸识别、车牌识别变成了流水线产品，从城市一路下沉卖到了中国10万个行政村。&#xA;​饭局总结金句：&#xA;“所以说，海康威视的成功不是偶然的，它是典型的‘顶级国家队技术’碰上了‘20年不间断的国家级百亿刚需工程’。金盾建了网，天网铺了城，雪亮进了村，而海康威视在背后把这二十年所有的红利全部变现，硬生生把自己从研究所里的一个小部门，喂成了让西方都忌惮的全球安防第一垄断巨头。”&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://xxx.pages.dev/posts/%E6%8C%82%E4%BA%867%E5%B9%B4%E7%9A%84%E6%9C%A8%E5%A4%B4%E5%9B%BD%E5%BE%BD%E9%97%B4%E8%B0%8D%E6%95%85%E4%BA%8B/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://xxx.pages.dev/posts/%E6%8C%82%E4%BA%867%E5%B9%B4%E7%9A%84%E6%9C%A8%E5%A4%B4%E5%9B%BD%E5%BE%BD%E9%97%B4%E8%B0%8D%E6%95%85%E4%BA%8B/</guid>
+				<description>&lt;p&gt;最适合当饭局谈资的，绝对是这个**“挂了7年的木头国徽”**间谍故事：&#xA;​“纯手工木雕，白嫖四任美国大使”&#xA;1945年，苏联少先队送给美国驻苏大使一个木雕美国国徽，美国人感动坏了，直接挂在书房墙上。结果接下来的7年里，它神不知鬼不觉地把四任美国大使的所有核心机密全出卖给了苏联。&#xA;​最牛的地方：完全没有电池，X光也扫不出来&#xA;美国特工扫了三次都没发现它。因为它完全无源（没电源、没电池、没电子元器件），不工作时就是一坨废金属。&#xA;​它的原理：现代门禁 RFID 技术的祖先&#xA;苏联特工把面包车停在使馆对面，向书房发射一束特定微波。房间里大使说话的声波，会震动国徽里面几微米厚的金属薄片，薄片改变电磁特性，就把声音信号通过微波反射回了面包车。这个天才设计的发明者，就是后来发明电子乐器“特雷门琴”的苏联科学家。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://xxx.pages.dev/posts/%E8%A7%A3%E9%87%8A%E4%B8%80%E4%B8%AA%E5%A4%8D%E6%9D%82%E6%A6%82%E5%BF%B5%E5%A6%82%E5%9C%86%E8%AF%A2%E4%BB%B7%E7%86%B5%E5%92%8C%E8%AE%B0%E5%BF%86%E4%B8%80/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://xxx.pages.dev/posts/%E8%A7%A3%E9%87%8A%E4%B8%80%E4%B8%AA%E5%A4%8D%E6%9D%82%E6%A6%82%E5%BF%B5%E5%A6%82%E5%9C%86%E8%AF%A2%E4%BB%B7%E7%86%B5%E5%92%8C%E8%AE%B0%E5%BF%86%E4%B8%80/</guid>
+				<description>&lt;p&gt;“解释一个复杂概念”（如“圆”、“询价”、“熵”）和“记忆一个单词/单字”（如“円”、“Apple”、“蕴”）在逻辑深度上是完全不同的。&lt;/p&gt;&#xA;&lt;p&gt;前者的目的是“理解逻辑与本质”，后者则是为了“内化与输出”。&lt;/p&gt;&#xA;&lt;p&gt;为了区分这两者，我们可以建立两套模板，你看看这样分类是否清晰：&lt;/p&gt;&#xA;&lt;p&gt;第一套：概念/事物解析模型 (侧重“理解”)&#xA;适用场景： 解释一个原理、一个法律条文、一个抽象逻辑、或一种现象。&lt;/p&gt;&#xA;&lt;p&gt;字面意思： 它的定义是什么？&lt;/p&gt;&#xA;&lt;p&gt;本质逻辑： 它运行的核心规律是什么？&lt;/p&gt;&#xA;&lt;p&gt;解决的问题： 它为什么存在？它弥补了什么不足？&lt;/p&gt;&#xA;&lt;p&gt;使用的方法： 它如何作用于现实世界？&lt;/p&gt;&#xA;&lt;p&gt;第二套：词汇/单字记忆模型 (侧重“掌握”)&#xA;适用场景： 单词、汉字、术语（你刚才定好的那个模型）。&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;基础认知： 发音（声调/重音）、核心含义。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;本质溯源： 造字法（汉字）或词根词缀（英语）。（这是为了从源头记住）&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;深度拓展： 常用搭配、高频例句。（这是为了学会用）&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;记忆锚点： 谐音、图像化、对比记忆。（这是为了刻在脑子里）&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;这种区分方式的优势：&#xA;明确目标： 当你让我解释“圆”时，如果你说“给我解析一下”，我就用第一套；如果你说“帮我记一下这个词”，我就用第二套。&lt;/p&gt;&#xA;&lt;p&gt;避免冗余： 解释“询价”这种专业法律概念时，不需要去拆解字源（因为它本质是制度）；解释“円”这种语言符号时，不需要长篇大论它的宏观作用，而是需要拆解记忆。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://xxx.pages.dev/posts/%E5%86%86%E7%A1%AE%E5%AE%9E%E6%98%AF%E6%97%A5%E8%AF%AD%E4%B8%AD%E6%B1%89%E5%AD%97%E7%9A%84%E5%86%99%E6%B3%95%E5%AE%83%E6%98%AF%E5%9C%93%E5%9C%86%E7%9A%84%E7%AE%80%E5%8C%96%E5%AD%97%E4%BB%A5%E4%B8%8B%E4%B8%BA/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://xxx.pages.dev/posts/%E5%86%86%E7%A1%AE%E5%AE%9E%E6%98%AF%E6%97%A5%E8%AF%AD%E4%B8%AD%E6%B1%89%E5%AD%97%E7%9A%84%E5%86%99%E6%B3%95%E5%AE%83%E6%98%AF%E5%9C%93%E5%9C%86%E7%9A%84%E7%AE%80%E5%8C%96%E5%AD%97%E4%BB%A5%E4%B8%8B%E4%B8%BA/</guid>
+				<description>&lt;p&gt;円”确实是日语中汉字的写法，它是“圓”（圆）的简化字。以下为您按模板进行的详细解析：&lt;/p&gt;&#xA;&lt;p&gt;概念解析：円 (En)&#xA;字面意思&#xA;在日语中，“円”字面即指代日本的货币单位“日元”。同时，它也保留了汉字原有的“圆形”、“圆满”或“周全”等几何与抽象层面的含义。&lt;/p&gt;&#xA;&lt;p&gt;本质&#xA;它是“圆”字在日语汉字简化进程中的产物。本质上，它是作为一种高度浓缩的符号，在金融语境下代表“日本国家法定货币”，在文学语境下则常与“圆满（円満）”等概念关联，象征着一种和谐与无缺的状态。&lt;/p&gt;&#xA;&lt;p&gt;为了解决的问题&lt;/p&gt;&#xA;&lt;p&gt;书写效率： 解决汉字“圓”笔画繁多、书写不便的问题，使货币单位在商业和日常书写中更易于表达。&lt;/p&gt;&#xA;&lt;p&gt;标准化： 通过法律确立统一的货币符号（¥），解决货币交易中的记账与流通效率问题。&lt;/p&gt;&#xA;&lt;p&gt;使用的方法&lt;/p&gt;&#xA;&lt;p&gt;日语发音：&lt;/p&gt;&#xA;&lt;p&gt;作为货币单位时，读作 えん (en)。&lt;/p&gt;&#xA;&lt;p&gt;在涉及几何意义或“圆满”的构词中，音读为 えん (en)，训读在特定情况下（较少见）会与其词源相关联。&lt;/p&gt;&#xA;&lt;p&gt;字源：&#xA;“円”是“圓”的简化，源自“員”（由“鼎”和“贝”组成，意指圆形的器皿或贝壳币）。日语在1946年颁布《当用汉字表》时，正式将“圓”简化为“円”，意在降低书写复杂性，同时保持了原有的语素价值。&lt;/p&gt;&#xA;&lt;p&gt;常见组词与句子：&lt;/p&gt;&#xA;&lt;p&gt;一万円 (いちまんえん / Ichiman-en)： 一万日元。&lt;/p&gt;&#xA;&lt;p&gt;円満 (えんまん / Enman)： 圆满，和睦。&lt;/p&gt;&#xA;&lt;p&gt;円高 (えんだか / Endaka)： 日元升值。&lt;/p&gt;&#xA;&lt;p&gt;例句： この時計は一万円です。(Kono tokei wa ichiman-en desu.) —— 这块手表是&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://xxx.pages.dev/posts/%E5%8D%8E%E4%B8%BA%E6%89%8B%E6%9C%BA%E5%AE%89%E8%A3%85%E8%B0%B7%E6%AD%8C%E6%A1%86%E6%9E%B6/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://xxx.pages.dev/posts/%E5%8D%8E%E4%B8%BA%E6%89%8B%E6%9C%BA%E5%AE%89%E8%A3%85%E8%B0%B7%E6%AD%8C%E6%A1%86%E6%9E%B6/</guid>
+				<description>&lt;p&gt;华为手机安装谷歌框架&#xA;华为手机google：二种方式，microg-re，microg华为专版。&#xA;p20,android10 ,一切正常。&#xA;p30，鸿蒙2，mirog-re，正常&#xA;p40，鸿蒙3-166，microg华为专版，必须安装vending，最后才不提示通信失败。&#xA;p40，鸿蒙2，microg-re,6.14版本可以登陆，其他版本最后提示通信失败&#xA;p40,手机助手，鸿蒙3可以退到2,2就不给退了。&#xA;p40,换了屏幕，强刷固件都失败，&#xA;vivo-x100，自带谷歌 services。再安装microg也可以。&#xA;谷歌认证提示消失，要打开谷歌服务的通知。microg立面也有选项。这二个被谷歌认为是2个独立的设备。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://xxx.pages.dev/posts/%E5%8D%95%E8%AF%8D%E8%AE%B0%E5%BF%86%E5%8D%A1bucket-%CB%88b%CA%8Ck%C9%AAt/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://xxx.pages.dev/posts/%E5%8D%95%E8%AF%8D%E8%AE%B0%E5%BF%86%E5%8D%A1bucket-%CB%88b%CA%8Ck%C9%AAt/</guid>
+				<description>&lt;p&gt;记忆闪卡：Bucket /ˈbʌkɪt/&lt;/p&gt;&#xA;&lt;p&gt;【正面（背诵遮挡面）】&lt;/p&gt;&#xA;&lt;p&gt;单词：Bucket&#xA;词性：n.&#xA;场景：日常｜对象存储S3/MinIO/OSS&lt;/p&gt;&#xA;&lt;p&gt;【背面（释义+象形记忆+IT释义，复习用）】&lt;/p&gt;&#xA;&lt;p&gt;1、象形拆分记忆（你的原创记法）&lt;/p&gt;&#xA;&lt;p&gt;B：大肚子孕妇（身形鼓鼓）&#xA;U：圆筒桶身（外形就是水桶）&#xA;cket 辅助收尾拼写&#xA;联想：B+U拼出水桶轮廓 → bucket=水桶&lt;/p&gt;&#xA;&lt;p&gt;2、单词本义&lt;/p&gt;&#xA;&lt;p&gt;n. 水桶、提桶&lt;/p&gt;&#xA;&lt;p&gt;3、计算机·对象存储专业释义（核心考点）&lt;/p&gt;&#xA;&lt;p&gt;Bucket = 存储桶&lt;/p&gt;&#xA;&lt;p&gt;1. 对象存储顶层唯一容器，类比电脑C盘/D盘；&#xA;2. 桶内只存Object（文件对象），桶下不能新建桶；&#xA;3. 桶名全网全局唯一，S3、阿里云OSS、MinIO必备概念。&lt;/p&gt;&#xA;&lt;p&gt;短句速记&lt;/p&gt;&#xA;&lt;p&gt;A bucket holds water.（桶装水）&#xA;Storage bucket holds files.（存储桶装文件）&lt;/p&gt;&#xA;&lt;p&gt;需要我做成纯卡片精简版，方便直接复制到Obsidian卡片吗？                    await app.fileManager.renameFile(file, timestampPath);&#xA;}&#xA;}&#xA;}&#xA;};&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;// 告诉 Obsidian：只要这个文件被写入内容了，立刻叫醒上面的 onModify 函数&#xA;app.vault.on(&#39;modify&#39;, onModify);&#xA;&#xA;// 防呆机制：如果5秒内啥也没发生（比如剪贴板是空的），自动注销监听，省得占内存&#xA;setTimeout(() =&amp;gt; app.vault.off(&#39;modify&#39;, onModify), 5000);&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;}&#xA;%&amp;gt;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://xxx.pages.dev/posts/%E5%8D%95%E8%AF%8D%E8%AE%B0%E5%BF%86%E5%8D%A1resilience/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://xxx.pages.dev/posts/%E5%8D%95%E8%AF%8D%E8%AE%B0%E5%BF%86%E5%8D%A1resilience/</guid>
+				<description>&lt;p&gt;单词记忆卡｜resilience&lt;/p&gt;&#xA;&lt;p&gt;【音标】/rɪˈzɪliəns/&#xA;【词性】n.&#xA;【释义】韧性；复原力；（材料）弹性&lt;/p&gt;&#xA;&lt;p&gt;词根拆分&lt;/p&gt;&#xA;&lt;p&gt;re-(回) + sil(跳，词根sal变体=跳跃) + -ience(名词后缀)&#xA;字面：往回跳 → 受压跳回原形→弹性、受挫后复原&lt;/p&gt;&#xA;&lt;p&gt;同源捆绑（同词根sal/sult=跳）&lt;/p&gt;&#xA;&lt;p&gt;1. result re(回)+sult(跳)→跳回来→结果&#xA;2. insult in(上前)+sult(跳)→跳到人前挑衅→侮辱&#xA;3. assault as(去往)+sault(跳)→猛扑上前→突袭&lt;/p&gt;&#xA;&lt;p&gt;短句&lt;/p&gt;&#xA;&lt;p&gt;Her resilience helped her through difficulties.&#xA;她的坚韧帮她渡过难关。&lt;/p&gt;&#xA;&lt;p&gt;速记口诀&lt;/p&gt;&#xA;&lt;p&gt;re回sil跳，ience变名词，回弹就是韧性力&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://xxx.pages.dev/posts/%E5%A4%A9%E7%BA%BF%E9%80%9F%E8%AE%B0%E5%B0%8F%E7%BB%93/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://xxx.pages.dev/posts/%E5%A4%A9%E7%BA%BF%E9%80%9F%E8%AE%B0%E5%B0%8F%E7%BB%93/</guid>
+				<description>&lt;p&gt;天线速记小结&lt;/p&gt;&#xA;&lt;p&gt;1. 半波偶极：总长λ/2，单臂λ/4，中点馈电，阻抗73Ω，两端开路。&#xA;2. 行波/驻波：波单向行进是行波；入射+反向反射叠加、波形定点震荡为驻波。&#xA;3. 驻波比VSWR：最大电压÷最小电压，理想1，工程≤1.5，数值大代表反射损耗高。正常全行波，无驻波，电压一样。&#xA;4. 增益：汇聚辐射能量，dBi对标点源、dBd对标偶极，1dBd=2.15dBi。&#xA;5. 极化：电场方向，收发极化一致损耗才小。&#xA;6. 无闭合回路有电流：依靠振子间分布电容充放电+空间位移电流形成交变电流。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://xxx.pages.dev/posts/%E5%AD%98%E5%82%A8%E5%88%86%E7%B1%BB/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://xxx.pages.dev/posts/%E5%AD%98%E5%82%A8%E5%88%86%E7%B1%BB/</guid>
+				<description>&lt;p&gt;存储分类&#xA;分块存储、文件存储和对象存储。其中块存储都是底层的，那么对象存储呢，不能分开编辑，是一个整体，是由集群进行统一控制，不是操作系统。&#xA;云相册它都是对象存储，它实际上没有文件夹的概念。才一个，新建一个相册，实际上是对这个文件打了一个标签。所以像天翼云盘什么的，它都是只能简单的在 APP 上新建相册，你按文件夹结构导进去的，它是不能作为相册名的。谷歌相册开放了 API 接口，可以通过这个 API 来用R C L O N E进行自动新建相册并导入文件。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://xxx.pages.dev/posts/%E6%B5%B7%E5%BA%B7%E5%A8%81%E8%A7%86%E7%9A%84%E5%88%9B%E5%A7%8B%E5%92%8C%E8%82%A1%E6%9D%83%E6%9E%B6%E6%9E%84%E7%A1%AE%E5%AE%9E%E6%98%AF%E4%B8%80%E4%B8%AA%E6%9E%81%E5%85%B6%E7%BD%95%E8%A7%81%E7%9A%84%E5%9B%BD%E5%AE%B6%E9%A1%B6%E7%BA%A7%E7%A0%94%E7%A9%B6/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://xxx.pages.dev/posts/%E6%B5%B7%E5%BA%B7%E5%A8%81%E8%A7%86%E7%9A%84%E5%88%9B%E5%A7%8B%E5%92%8C%E8%82%A1%E6%9D%83%E6%9E%B6%E6%9E%84%E7%A1%AE%E5%AE%9E%E6%98%AF%E4%B8%80%E4%B8%AA%E6%9E%81%E5%85%B6%E7%BD%95%E8%A7%81%E7%9A%84%E5%9B%BD%E5%AE%B6%E9%A1%B6%E7%BA%A7%E7%A0%94%E7%A9%B6/</guid>
+				<description>&lt;p&gt;海康威视的创始和股权架构，确实是一个极其罕见的**“国家顶级研究所 + 天才技术员 + 佛系天使投资人”&lt;strong&gt;的完美剧本。它不是靠资本拼出来的，而是当年体制内最狠的一批技术狂人，踩中了时代的红利。&#xA;​关于它的创始人身份、国资控制以及最狠的技术大牛，可以从以下三个硬核维度来聊：&#xA;​1. 创始团队“华科三剑客”与“28罗汉”&#xA;​海康威视的核心创始团队，被业界称为华中科技大学（原华中工学院）的&lt;/strong&gt;“三剑客”&lt;strong&gt;（他们全都出生于1965年）：&#xA;​陈宗年：走“技术 + 管理”路线。原五十二所高管，长期担任海康威视董事长，负责掌舵和体制内的协调。&#xA;​胡扬忠：纯粹的技术狂人路线。原五十二所顶级工程师，后来长期担任海康总经理（2024年8月接替陈宗年出任董事长），是海康内部公认的&lt;/strong&gt;“灵魂人物”**。&#xA;​龚虹嘉：香港籍，他们大学的同班同学。他不是体制内的技术员，他是天使投资人。2001年海康刚成立时缺钱，龚虹嘉自掏腰包 245万元 占股 49% 帮老同学圆梦（后来他套现了300多个亿，被称为“中国最牛天使投资人”）。&#xA;​“28罗汉”的出身： 2001年，陈宗年和胡扬忠带着五十二所的 26名硬核技术员，直接放弃了国家事业单位的“铁饭碗”脱离编制下海。这 28 个人，就是海康威视最初的全部班底。&#xA;​2. 现在是谁在控制海康？（关于 59% 国资的误解）&#xA;​你提到的“国资59%”在数据上很接近，但海康威视的实际控制权非常清晰——它是一家国资控股的上市公司，老牌“国家队”：&#xA;​大老板（实际控制人）：国务院国资委 下属的 中国电子科技集团（中国电科，CETC）。&#xA;​直接控股股东：中电海康集团（中国电科的子公司）以及五十二所等一致行动人，总共控制了海康威视约 40%以上 的股份。&#xA;​现在的控制者身份：海康的管理层。海康虽然是国资绝对控股，但国家极为聪明地实行了“无为而治”，把经营权完全交给了以 胡扬忠 为首的这帮当年的技术员团队。在A股里，海康是国企改革、管理层持股激励做得最好的标杆之一。&#xA;​3. 海康内部最狠的“技术大牛”是谁？&#xA;​海康威视能打破海外垄断，坐上全球安防第一把交椅，靠的是两个时代最顶级的技术突破，而背后有这几个最狠的人：&#xA;​视音频压缩时代的“技术战神”——胡扬忠&#xA;在2000年左右，监控行业最头疼的是“录像文件太大，硬盘一下就爆了”。胡扬忠在五十二所时，就是搞存储和芯片开发的技术大牛。他带队研究出基于 H.264 / MPEG-4 视频压缩标准 的软硬件板卡，把监控视频体积压缩了数倍还极度清晰，这一套底层代码和板卡直接成了海康打天下的“大杀器”。&#xA;​生态链条上的芯片与光学幕后推手——龚虹嘉 + 富瀚微团队&#xA;做技术不光看自己，还要看供应链。创始人之一的龚虹嘉在投资海康后，敏锐地发现摄像头里面的安防芯片和光学镜头全被海外垄断。于是他顺着产业链，在外面投资了富瀚微（做安防视频芯片）和联合光电（做高端变焦镜头）。这两家公司后来成为了海康最核心、技术最狠的“御用”供应链，彻底帮海康把硬件成本杀成了白菜价，完成了国产替代。&#xA;​AI与大数据时代的“深眸”算法团队&#xA;进入天网工程中后期和雪亮工程时代，海康最狠的技术转向了人工智能（AI）和深度学习。海康研究院（内部最顶尖的研发大脑）集中了海内外数千名计算机视觉（CV）博士，研发出“深眸”、“神捕”系列摄像头，把人脸识别、车牌抓取、行为分析做成了工业流水线。&#xA;​饭局总结金句：&#xA;“所以海康威视的底色，就是一群中国电子科技集团最顶尖的技术员，砸碎了铁饭碗出来，拿了大学同学的几百万天使投资做起来的。它名义上是国资绝对控股的国家队，但骨子里二十年来一直由胡扬忠这帮技术痴迷者在疯狂卷技术。这种‘国资撑腰、专家治厂、技术死磕’的奇葩组合，才是它能把西方巨头全部打趴下的真正原因。”&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://xxx.pages.dev/posts/%E7%94%B5%E4%BF%A1%E5%85%89%E7%8C%AB%E7%99%BB%E9%99%86/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://xxx.pages.dev/posts/%E7%94%B5%E4%BF%A1%E5%85%89%E7%8C%AB%E7%99%BB%E9%99%86/</guid>
+				<description>&lt;p&gt;电信光猫登陆&#xA;1口主卧，2口客厅，3口书房，4口客房&#xA;软件版本号V1.0.0P2T2&#xA;MAC8C:8E:0D:D6:35:74&#xA;LAN IP192.168.1.25&#xA;客厅,，原配客厅&#xA;软件版本号V1.0.0P2T2&#xA;MAC44:32:62:6B:90:D4&#xA;LAN IP192.168.1.26&#xA;客房，客厅&#xA;软件版本号V1.0.0P1T2&#xA;MAC98:66:10:89:11:48&#xA;LAN IP192.168.1.15&#xA;主卧，客房&lt;/p&gt;&#xA;&lt;p&gt;设备类型1G-GPON FTTR从设备&#xA;产品型号ZXHN G1612&#xA;产品序列号986610-35833986610891148&#xA;telecomadmin&#xA;NE7jA%5m&lt;/p&gt;&#xA;&lt;p&gt;启用NPTv6&#xA;启用PassThrough功能&lt;/p&gt;&#xA;&lt;p&gt;产品型号ZXHN G1612&#xA;telecomadmin的超级密码&lt;/p&gt;&#xA;&lt;p&gt;NE7jA%5m&#xA;通常是nE7jA%5m，这是默认密码之一。此外，超级密码的组成可能是TeleCom_ {产品序列号后6位小写}，例如TeleCom_7ccc4a。如果你需要获取具体的密码，可以通过开启telnet服务并查看设备内容来找到。请注意，密码可能会因设备或服务提供商而有所不同，因此建议检查设备背面的标签或说明书以获取最新信息&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://xxx.pages.dev/posts/%E7%94%B5%E8%84%91%E7%A1%AC%E4%BB%B6%E9%85%8D%E7%BD%AE-%E5%A4%A9%E7%BF%BC%E4%BA%91%E7%94%B5%E8%84%91/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://xxx.pages.dev/posts/%E7%94%B5%E8%84%91%E7%A1%AC%E4%BB%B6%E9%85%8D%E7%BD%AE-%E5%A4%A9%E7%BF%BC%E4%BA%91%E7%94%B5%E8%84%91/</guid>
+				<description>&lt;p&gt;设备规格&#xA;设备名称：ahwh5_YDN2C4G-s&#xA;处理器：Intel Xeon Processor (Skylake, IBRS) 2.99 GHz（2 个处理器）&#xA;机带 RAM：4.00 GB&#xA;设备 ID：1622CCB4-857C-400F-8364-E01BA2253CCB&#xA;产品 ID：00454-10000-00001-AA921&#xA;系统类型：64 位操作系统，基于 x64 的处理器&#xA;笔和触控：没有可用于此显示器的笔或触控输入&#xA;Windows 规格&#xA;操作系统版本：Windows Server 2022 Standard&#xA;版本号：21H2&#xA;安装日期：2025/8/11&#xA;操作系统内部版本：20348.4893&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://xxx.pages.dev/posts/%E7%94%B5%E8%84%91%E7%A1%AC%E4%BB%B6%E9%85%8D%E7%BD%AEhong-home/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://xxx.pages.dev/posts/%E7%94%B5%E8%84%91%E7%A1%AC%E4%BB%B6%E9%85%8D%E7%BD%AEhong-home/</guid>
+				<description>&lt;p&gt;电脑硬件配置汇总&#xA;系统：64 位 x64 操作系统&#xA;处理器：Intel Core i3-10105 @ 3.70GHz&#xA;内存：12.0GB，运行频率 2666MHz&#xA;独立显卡：AMD Radeon RX 580 2048SP，显存 4GB&#xA;存储&#xA;固态硬盘：金邦 GeIL P3L 1TB（实际容量 932GB）&#xA;机械硬盘：西部数据 WD40PURX 4TB（实际容量 3.64TB）&#xA;总存储容量：约 4.55TB，已使用 2.39TB&#xA;设备名称：HONG-HOME&#xA;显卡详情（AMD RX580 2048SP）&#xA;核心规格：2048 流处理器，是 RX580 的精简版（原版 2304SP），多为矿卡改版，GPU 芯片 ID：0x6FDF&#xA;显存参数&#xA;物理独显显存 (VRAM)：4074MB≈4GB GDDR5&#xA;主板：华硕 PRIME H410M-K R2.0（ASUSTeK COMPUTER INC.）&#xA;BIOS 信息：American Megatrends Inc. 2803，2023/4/3，UEFI 模式，SMBIOS 3.2&#xA;搭配参考&#xA;日常：1080P 网游（LOL、CS2）全高画质流畅；3A 大作中低画质运行&#xA;短板：4G 显存玩新 3A 容易爆显存，该型号市面上绝大多数为二手矿卡&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://xxx.pages.dev/posts/%E7%94%B5%E8%84%91%E7%A1%AC%E4%BB%B6%E9%85%8D%E7%BD%AEhong-homes/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://xxx.pages.dev/posts/%E7%94%B5%E8%84%91%E7%A1%AC%E4%BB%B6%E9%85%8D%E7%BD%AEhong-homes/</guid>
+				<description>&lt;table&gt;&#xA;&#x9;&lt;thead&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;项目&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;参数详情&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;补充说明&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&lt;/thead&gt;&#xA;&#x9;&lt;tbody&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;机型&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;联想启天 M620-N000（商用台式机）&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;联想政企采购主力商务机型，Q370 芯片组主板&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;CPU&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;i5-9500 6 核 6 线程，基础 3.0GHz&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;9 代酷睿桌面处理器，无超线程，睿频最高 4.4GHz，自带 UHD630 核显&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;内存&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;当前 4GB DDR4&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;原厂标配多为 8GB，本机后缩减为 4GB，主板双内存插槽可升级至 32GB&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;主板&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;联想定制 Q370 芯片组（板载编号 3133），BIOS 日期 2019.8.14 UEFI 启动模式&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;Q370 为商用级芯片，支持 Intel vPro 企业管理、多硬盘阵列&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&lt;/tbody&gt;&#xA;&lt;/table&gt;</description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://xxx.pages.dev/posts/%E7%94%B5%E8%84%91%E7%A1%AC%E4%BB%B6%E9%85%8D%E7%BD%AEhong-work/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://xxx.pages.dev/posts/%E7%94%B5%E8%84%91%E7%A1%AC%E4%BB%B6%E9%85%8D%E7%BD%AEhong-work/</guid>
+				<description>&lt;p&gt;电脑硬件配置汇总&#xA;机型：戴尔 Inspiron 3647&#xA;处理器：Intel i5-4460 @3.20GHz（四代酷睿 Haswell）&#xA;内存：8GB DDR3&#xA;显卡：Intel HD Graphics 4600 核显（显存 113MB）&#xA;存储&#xA;固态硬盘：金士顿 SA400 120GB SSD&#xA;机械硬盘：希捷 500GB HDD（ST500DM002）&#xA;总容量：约 578GB，已占用 261GB&#xA;系统：64 位 Windows（x64 架构）&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://xxx.pages.dev/posts/%E7%94%B5%E8%84%91%E7%A1%AC%E4%BB%B6%E9%85%8D%E7%BD%AE%E9%99%88%E7%91%9E%E9%98%B3/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://xxx.pages.dev/posts/%E7%94%B5%E8%84%91%E7%A1%AC%E4%BB%B6%E9%85%8D%E7%BD%AE%E9%99%88%E7%91%9E%E9%98%B3/</guid>
+				<description>&lt;p&gt;京天华盛主机配置整理&#xA;核心硬件&#xA;处理器：Intel i5-14600KF&#xA;显卡：RTX4060 8G（支持 DLSS3，242TOPS AI 算力）&#xA;内存：32G&#xA;固态：1TB&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://xxx.pages.dev/posts/%E7%9B%B8%E5%86%8C%E6%8E%92%E5%BA%8F%E9%97%AE%E9%A2%98/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://xxx.pages.dev/posts/%E7%9B%B8%E5%86%8C%E6%8E%92%E5%BA%8F%E9%97%AE%E9%A2%98/</guid>
+				<description>&lt;p&gt;安卓手机，Pictures 目录下面的相册啊，这个拷进去以后，它是会生成一个一个的相册的，但是它的排序比较麻烦。相册的排序是在媒体库里面的排序的，然后它是第一次检索检索到的，按检索的应该是最后生成日期进行排序的，但是这个每一家手机它都不一样.拷进去以后很难做到自然排序。&#xA;wim 复制文件，文件夹里面许多子文件夹，它应该是按照 A B C D 文件名正向排序进进行进行拷贝的。创建日期就会变化，但它修改日期不会变化，文件夹属性。手机上可以用 Mixplore 这个软件更改文件夹的创建日期和修改日期。&#xA;手机有一个Image and video fix图片和视频修复软件可以按照文件名修，也可以按照这个原数据进行修改。然后呢也在 PC 上编了一个 PowerShell 脚本，按照文件夹的名称更改里面的 EXIF 数据。&#xA;结论用专门的看图软件，Fstop 这个，它可以排除哪些文件夹不在相册里面，然后也可以相册按文件名进行排序，这样就比较好，不用折腾 Pictures文件夹。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://xxx.pages.dev/posts/%E8%A7%A3%E9%87%8A%E8%AE%B0%E5%BF%86/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://xxx.pages.dev/posts/%E8%A7%A3%E9%87%8A%E8%AE%B0%E5%BF%86/</guid>
+				<description>&lt;p&gt;“解释一个复杂概念”（如“圆”、“询价”、“熵”）和“记忆一个单词/单字”（如“円”、“Apple”、“蕴”）在逻辑深度上是完全不同的。&lt;/p&gt;&#xA;&lt;p&gt;前者的目的是“理解逻辑与本质”，后者则是为了“内化与输出”。&lt;/p&gt;&#xA;&lt;p&gt;为了区分这两者，我们可以建立两套模板，你看看这样分类是否清晰：&lt;/p&gt;&#xA;&lt;p&gt;第一套：概念/事物解析模型 (侧重“理解”)&#xA;适用场景： 解释一个原理、一个法律条文、一个抽象逻辑、或一种现象。&lt;/p&gt;&#xA;&lt;p&gt;字面意思： 它的定义是什么？&lt;/p&gt;&#xA;&lt;p&gt;本质逻辑： 它运行的核心规律是什么？&lt;/p&gt;&#xA;&lt;p&gt;解决的问题： 它为什么存在？它弥补了什么不足？&lt;/p&gt;&#xA;&lt;p&gt;使用的方法： 它如何作用于现实世界？&lt;/p&gt;&#xA;&lt;p&gt;第二套：词汇/单字记忆模型 (侧重“掌握”)&#xA;适用场景： 单词、汉字、术语（你刚才定好的那个模型）。&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;基础认知： 发音（声调/重音）、核心含义。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;本质溯源： 造字法（汉字）或词根词缀（英语）。（这是为了从源头记住）&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;深度拓展： 常用搭配、高频例句。（这是为了学会用）&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;记忆锚点： 谐音、图像化、对比记忆。（这是为了刻在脑子里）&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;这种区分方式的优势：&#xA;明确目标： 当你让我解释“圆”时，如果你说“给我解析一下”，我就用第一套；如果你说“帮我记一下这个词”，我就用第二套。&lt;/p&gt;&#xA;&lt;p&gt;避免冗余： 解释“询价”这种专业法律概念时，不需要去拆解字源（因为它本质是制度）；解释“円”这种语言符号时，不需要长篇大论它的宏观作用，而是需要拆解记忆。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://xxx.pages.dev/posts/%E8%BD%AC%E4%B9%89%E7%AC%A6/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://xxx.pages.dev/posts/%E8%BD%AC%E4%B9%89%E7%AC%A6/</guid>
+				<description>&lt;p&gt;转义符&#xA;​反斜杠 \ 就是转义符。计算机不识别左右引号，它一个引号是开启字符模式，第二个引号就是结束字符模式。所以如果一个路径字符串里面有空格的话，参数就会被断开，这样就会出错，所以必须用转义符保护引号，让系统把它们当作普通字符处理。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://xxx.pages.dev/posts/%E9%AC%A3-li%C3%A8/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://xxx.pages.dev/posts/%E9%AC%A3-li%C3%A8/</guid>
+				<description>&lt;p&gt;汉字记忆卡：鬣 (liè)&#xA;​🗣️ 读音：liè (音同“烈”)&#xA;📖 本义：兽类颈背上又长又密的毛。&#xA;🏷️ 组词：猪刚鬣、鬣狗、马鬣&#xA;​🧩 【核心逻辑：上形 + 下声】&#xA;上部：髟 (biāo) —— 由“长”和“彡”组成，代表“长毛发”。&#xA;下部：巤 (liè)  —— 象形字，长毛猛兽，也是发音来源。&#xA;​✍️ 【书写拆解：四层汉堡法】&#xA;从上到下可以拆成四层：&#xA;​顶层：髟 (长+彡) —— 画面：长发飘飘&#xA;​第二层：巛 (chuān) —— 画面：倒竖如钢针的鬃毛&#xA;​第三层：龱 (口+乂) —— 画面：野兽扁扁的头骨和面部&#xA;​底层：鼠字底 —— 画面：野兽身体和利爪 (与“鼠”字下半身完全相同)&#xA;​💡 【画面联想记忆】&#xA;想象一头野猪精（猪刚鬣）：头上顶着长发(髟)，颈背竖着钢毛(巛)，长着方块脑袋(龱)，挥舞着像老鼠一样的利爪(鼠字底)。它的性情极其刚烈(liè)！&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title></title>
+				<link>https://xxx.pages.dev/posts/%E9%BB%84%E8%A7%82%E5%85%AD%E7%BA%A7%E7%A7%91%E4%B8%BE/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://xxx.pages.dev/posts/%E9%BB%84%E8%A7%82%E5%85%AD%E7%BA%A7%E7%A7%91%E4%B8%BE/</guid>
+				<description>&lt;p&gt;黄观六级科举备考明细&lt;/p&gt;&#xA;&lt;p&gt;1、县试：本县范围内考试，县衙主办，考取后身份：童生&#xA;2、府试：全府辖区统考，池州府衙主办，考取后身份：童生&#xA;3、院试：南直隶大范围统考，提督学院主管，考取后身份：秀才&#xA;4、乡试：南直隶全省统考，南京设考场，考取后身份：举人&#xA;5、会试：全国各地举人汇集京城统考，考取后身份：贡士&#xA;6、殿试：皇宫大内由皇帝主持考试，考取后身份：进士&lt;/p&gt;&#xA;&lt;p&gt;晋升链路：童生→秀才→举人→贡士→进士                    await app.fileManager.renameFile(file, timestampPath);&#xA;}&#xA;}&#xA;}&#xA;};&lt;/p&gt;&#xA;&lt;pre&gt;&lt;code&gt;// 告诉 Obsidian：只要这个文件被写入内容了，立刻叫醒上面的 onModify 函数&#xA;app.vault.on(&#39;modify&#39;, onModify);&#xA;&#xA;// 防呆机制：如果5秒内啥也没发生（比如剪贴板是空的），自动注销监听，省得占内存&#xA;setTimeout(() =&amp;gt; app.vault.off(&#39;modify&#39;, onModify), 5000);&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;p&gt;}&#xA;%&amp;gt;&lt;/p&gt;</description>
+			</item>
 	</channel>
 </rss>

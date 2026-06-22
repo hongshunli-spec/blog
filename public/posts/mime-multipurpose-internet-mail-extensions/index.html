@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>个人博客</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="MIME 彻底理清：
+​1. 核心目的：让原本只能发“纯文本”的邮件，能够发送图片、音视频和附件
+​早期的互联网世界非常简陋，电子邮件（SMTP 协议）在设计之初，只支持传输英文字符（7位 ASCII 码）。这意味着你只能给别人发纯英文的信件，连中文都没法发，更别提发送图片、音乐或 Word 文档了。
+​痛点：用户迫切需要通过邮件发送丰富的内容（多媒体、多语言、附件），但现有的邮件系统架构已经定死，无法直接识别这些复杂的二进制文件。
+​目的：MIME 的诞生，就是为了在不彻底重构全球邮件系统的基础上，对邮件协议进行扩展。它定义了一套标准，告诉收发双方：这封邮件里不仅仅有文字，还藏着什么类型的文件，应该怎么去解析它。
+​2. 主要手段：头信息宣告 &#43; 数据编码（Base64/Quoted-printable）
+​MIME 的实现手段非常巧妙，它就像是在一封信的信封和信件内部加了**“特殊的标签”**。主要通过以下两个手段实现：
+​① 在邮件头（Header）中增加 MIME 标签
+​MIME 在邮件的头部引入了几个关键字段，最核心的是 Content-Type（内容类型）。它用一种统一的格式来标记文件的属性，格式为 大类/小类。
+​Content-Type: image/jpeg （告诉接收方：这是一个 JPEG 图片）
+​Content-Type: application/pdf （告诉接收方：这是一个 PDF 文档）
+​Content-Type: text/html （告诉接收方：这是一段网页代码，请渲染它）
+​② 结合编码技术（如 Base64）进行打包
+​光打标签还不够，二进制数据依然无法直接在纯文本网络里传输。这时候 MIME 就会指定一种编码方式（通过 Content-Transfer-Encoding 字段）。
+​如果是图片或附件，MIME 就会调用我们刚才讲的 Base64 编码，把图片变成一堆安全的文本字符，塞进邮件正文里。
+​邮件送到对方手里后，对方的客户端（比如 Outlook 或 Gmail）看到 MIME 的标签，就知道“哦！这堆乱七八糟的文本其实是一张用 Base64 编码的 JPEG 图片”，于是自动把它解码，还原成图片展示出来。
+​3. 名称的含义：多用途互联网邮件扩展
+​MIME 的全称是：Multipurpose Internet Mail Extensions。
+​Multipurpose（多用途）：表示它不再局限于最初的“纯英文文本”，而是可以处理文字、图片、音频、视频、应用程序等各种用途的数据。
+​Internet Mail（互联网邮件）：说明了它的出生背景，最初就是为了解决电子邮件的传输限制而设计的。
+​Extensions（扩展）：强调它是在老旧的 SMTP 邮件协议基础上，做的一层“外挂式”的兼容性扩展。
+​延伸：MIME 的今天
+​虽然 MIME 最早是为电子邮件量身定制的，但因为它的 Content-Type（媒体类型定义）设计得实在太成功了，以至于后来整个万维网（Web/HTTP 协议）都直接继承了这一套标准。
+​现在你用浏览器上网，服务器传给浏览器的每一个网页、每一张图片、每一个 API 接口数据，返回的 HTTP 响应头里都带着 MIME 类型（比如 Content-Type: application/json）。它已经从一个“邮件扩展协议”，变成了整个互联网多媒体类型的通用基石。">
+    <meta name="generator" content="Hugo 0.163.3">
+    
+    
+    
+      <meta name="robots" content="index, follow">
+    
+    
+
+    <link rel="stylesheet" href="/ananke/css/main.02a37ad6c4e155c542d276915a0e3f83f5c7c5fec443350f6e60753f1679b7a7.css" integrity="sha256-AqN61sThVcVC0naRWg4/g/XHxf7EQzUPbmB1PxZ5t6c=" crossorigin="anonymous">
+    <script>
+  (function () {
+    "use strict";
+
+    
+    
+    function revealButtons() {
+      var buttons = document.querySelectorAll(".code-block .code-copy[hidden]");
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].hidden = false;
+      }
+    }
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", revealButtons);
+    } else {
+      revealButtons();
+    }
+
+    function flash(button) {
+      var label = button.querySelector(".code-copy-label");
+      var previous = label ? label.textContent : null;
+      button.classList.add("is-copied");
+      if (label) label.textContent = "Copied";
+      window.setTimeout(function () {
+        button.classList.remove("is-copied");
+        if (label && previous !== null) label.textContent = previous;
+      }, 2000);
+    }
+
+    function legacyCopy(text) {
+      var area = document.createElement("textarea");
+      area.value = text;
+      area.setAttribute("readonly", "");
+      area.style.position = "absolute";
+      area.style.left = "-9999px";
+      document.body.appendChild(area);
+      area.select();
+      var ok = false;
+      try {
+        ok = document.execCommand("copy");
+      } catch (e) {
+        ok = false;
+      }
+      document.body.removeChild(area);
+      return ok;
+    }
+
+    function copyFrom(button) {
+      var container = button.closest(".code-block");
+      if (!container) return;
+      var pre = container.querySelector("pre");
+      if (!pre) return;
+      var source = pre.querySelector("code") || pre;
+      var text = source.innerText;
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(
+          function () { flash(button); },
+          function () { if (legacyCopy(text)) flash(button); }
+        );
+      } else if (legacyCopy(text)) {
+        flash(button);
+      }
+    }
+
+    document.addEventListener("click", function (event) {
+      var button = event.target.closest(".code-copy");
+      if (button) copyFrom(button);
+    });
+  })();
+</script>
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="https://xxx.pages.dev/posts/mime-multipurpose-internet-mail-extensions/">
+    
+
+    
+    
+    <meta property="og:url" content="https://xxx.pages.dev/posts/mime-multipurpose-internet-mail-extensions/">
+	<meta property="og:site_name" content="个人博客">
+	<meta property="og:title" content="个人博客">
+	<meta property="og:description" content="MIME 彻底理清： ​1. 核心目的：让原本只能发“纯文本”的邮件，能够发送图片、音视频和附件 ​早期的互联网世界非常简陋，电子邮件（SMTP 协议）在设计之初，只支持传输英文字符（7位 ASCII 码）。这意味着你只能给别人发纯英文的信件，连中文都没法发，更别提发送图片、音乐或 Word 文档了。 ​痛点：用户迫切需要通过邮件发送丰富的内容（多媒体、多语言、附件），但现有的邮件系统架构已经定死，无法直接识别这些复杂的二进制文件。 ​目的：MIME 的诞生，就是为了在不彻底重构全球邮件系统的基础上，对邮件协议进行扩展。它定义了一套标准，告诉收发双方：这封邮件里不仅仅有文字，还藏着什么类型的文件，应该怎么去解析它。 ​2. 主要手段：头信息宣告 &#43; 数据编码（Base64/Quoted-printable） ​MIME 的实现手段非常巧妙，它就像是在一封信的信封和信件内部加了**“特殊的标签”**。主要通过以下两个手段实现： ​① 在邮件头（Header）中增加 MIME 标签 ​MIME 在邮件的头部引入了几个关键字段，最核心的是 Content-Type（内容类型）。它用一种统一的格式来标记文件的属性，格式为 大类/小类。 ​Content-Type: image/jpeg （告诉接收方：这是一个 JPEG 图片） ​Content-Type: application/pdf （告诉接收方：这是一个 PDF 文档） ​Content-Type: text/html （告诉接收方：这是一段网页代码，请渲染它） ​② 结合编码技术（如 Base64）进行打包 ​光打标签还不够，二进制数据依然无法直接在纯文本网络里传输。这时候 MIME 就会指定一种编码方式（通过 Content-Transfer-Encoding 字段）。 ​如果是图片或附件，MIME 就会调用我们刚才讲的 Base64 编码，把图片变成一堆安全的文本字符，塞进邮件正文里。 ​邮件送到对方手里后，对方的客户端（比如 Outlook 或 Gmail）看到 MIME 的标签，就知道“哦！这堆乱七八糟的文本其实是一张用 Base64 编码的 JPEG 图片”，于是自动把它解码，还原成图片展示出来。 ​3. 名称的含义：多用途互联网邮件扩展 ​MIME 的全称是：Multipurpose Internet Mail Extensions。 ​Multipurpose（多用途）：表示它不再局限于最初的“纯英文文本”，而是可以处理文字、图片、音频、视频、应用程序等各种用途的数据。 ​Internet Mail（互联网邮件）：说明了它的出生背景，最初就是为了解决电子邮件的传输限制而设计的。 ​Extensions（扩展）：强调它是在老旧的 SMTP 邮件协议基础上，做的一层“外挂式”的兼容性扩展。 ​延伸：MIME 的今天 ​虽然 MIME 最早是为电子邮件量身定制的，但因为它的 Content-Type（媒体类型定义）设计得实在太成功了，以至于后来整个万维网（Web/HTTP 协议）都直接继承了这一套标准。 ​现在你用浏览器上网，服务器传给浏览器的每一个网页、每一张图片、每一个 API 接口数据，返回的 HTTP 响应头里都带着 MIME 类型（比如 Content-Type: application/json）。它已经从一个“邮件扩展协议”，变成了整个互联网多媒体类型的通用基石。">
+	<meta property="og:locale" content="zh_cn">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="posts">
+
+	<meta itemprop="name" content="个人博客">
+	<meta itemprop="description" content="MIME 彻底理清： ​1. 核心目的：让原本只能发“纯文本”的邮件，能够发送图片、音视频和附件 ​早期的互联网世界非常简陋，电子邮件（SMTP 协议）在设计之初，只支持传输英文字符（7位 ASCII 码）。这意味着你只能给别人发纯英文的信件，连中文都没法发，更别提发送图片、音乐或 Word 文档了。 ​痛点：用户迫切需要通过邮件发送丰富的内容（多媒体、多语言、附件），但现有的邮件系统架构已经定死，无法直接识别这些复杂的二进制文件。 ​目的：MIME 的诞生，就是为了在不彻底重构全球邮件系统的基础上，对邮件协议进行扩展。它定义了一套标准，告诉收发双方：这封邮件里不仅仅有文字，还藏着什么类型的文件，应该怎么去解析它。 ​2. 主要手段：头信息宣告 &#43; 数据编码（Base64/Quoted-printable） ​MIME 的实现手段非常巧妙，它就像是在一封信的信封和信件内部加了**“特殊的标签”**。主要通过以下两个手段实现： ​① 在邮件头（Header）中增加 MIME 标签 ​MIME 在邮件的头部引入了几个关键字段，最核心的是 Content-Type（内容类型）。它用一种统一的格式来标记文件的属性，格式为 大类/小类。 ​Content-Type: image/jpeg （告诉接收方：这是一个 JPEG 图片） ​Content-Type: application/pdf （告诉接收方：这是一个 PDF 文档） ​Content-Type: text/html （告诉接收方：这是一段网页代码，请渲染它） ​② 结合编码技术（如 Base64）进行打包 ​光打标签还不够，二进制数据依然无法直接在纯文本网络里传输。这时候 MIME 就会指定一种编码方式（通过 Content-Transfer-Encoding 字段）。 ​如果是图片或附件，MIME 就会调用我们刚才讲的 Base64 编码，把图片变成一堆安全的文本字符，塞进邮件正文里。 ​邮件送到对方手里后，对方的客户端（比如 Outlook 或 Gmail）看到 MIME 的标签，就知道“哦！这堆乱七八糟的文本其实是一张用 Base64 编码的 JPEG 图片”，于是自动把它解码，还原成图片展示出来。 ​3. 名称的含义：多用途互联网邮件扩展 ​MIME 的全称是：Multipurpose Internet Mail Extensions。 ​Multipurpose（多用途）：表示它不再局限于最初的“纯英文文本”，而是可以处理文字、图片、音频、视频、应用程序等各种用途的数据。 ​Internet Mail（互联网邮件）：说明了它的出生背景，最初就是为了解决电子邮件的传输限制而设计的。 ​Extensions（扩展）：强调它是在老旧的 SMTP 邮件协议基础上，做的一层“外挂式”的兼容性扩展。 ​延伸：MIME 的今天 ​虽然 MIME 最早是为电子邮件量身定制的，但因为它的 Content-Type（媒体类型定义）设计得实在太成功了，以至于后来整个万维网（Web/HTTP 协议）都直接继承了这一套标准。 ​现在你用浏览器上网，服务器传给浏览器的每一个网页、每一张图片、每一个 API 接口数据，返回的 HTTP 响应头里都带着 MIME 类型（比如 Content-Type: application/json）。它已经从一个“邮件扩展协议”，变成了整个互联网多媒体类型的通用基石。">
+	<meta itemprop="wordCount" content="91">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="个人博客">
+	<meta name="twitter:description" content="MIME 彻底理清： ​1. 核心目的：让原本只能发“纯文本”的邮件，能够发送图片、音视频和附件 ​早期的互联网世界非常简陋，电子邮件（SMTP 协议）在设计之初，只支持传输英文字符（7位 ASCII 码）。这意味着你只能给别人发纯英文的信件，连中文都没法发，更别提发送图片、音乐或 Word 文档了。 ​痛点：用户迫切需要通过邮件发送丰富的内容（多媒体、多语言、附件），但现有的邮件系统架构已经定死，无法直接识别这些复杂的二进制文件。 ​目的：MIME 的诞生，就是为了在不彻底重构全球邮件系统的基础上，对邮件协议进行扩展。它定义了一套标准，告诉收发双方：这封邮件里不仅仅有文字，还藏着什么类型的文件，应该怎么去解析它。 ​2. 主要手段：头信息宣告 &#43; 数据编码（Base64/Quoted-printable） ​MIME 的实现手段非常巧妙，它就像是在一封信的信封和信件内部加了**“特殊的标签”**。主要通过以下两个手段实现： ​① 在邮件头（Header）中增加 MIME 标签 ​MIME 在邮件的头部引入了几个关键字段，最核心的是 Content-Type（内容类型）。它用一种统一的格式来标记文件的属性，格式为 大类/小类。 ​Content-Type: image/jpeg （告诉接收方：这是一个 JPEG 图片） ​Content-Type: application/pdf （告诉接收方：这是一个 PDF 文档） ​Content-Type: text/html （告诉接收方：这是一段网页代码，请渲染它） ​② 结合编码技术（如 Base64）进行打包 ​光打标签还不够，二进制数据依然无法直接在纯文本网络里传输。这时候 MIME 就会指定一种编码方式（通过 Content-Transfer-Encoding 字段）。 ​如果是图片或附件，MIME 就会调用我们刚才讲的 Base64 编码，把图片变成一堆安全的文本字符，塞进邮件正文里。 ​邮件送到对方手里后，对方的客户端（比如 Outlook 或 Gmail）看到 MIME 的标签，就知道“哦！这堆乱七八糟的文本其实是一张用 Base64 编码的 JPEG 图片”，于是自动把它解码，还原成图片展示出来。 ​3. 名称的含义：多用途互联网邮件扩展 ​MIME 的全称是：Multipurpose Internet Mail Extensions。 ​Multipurpose（多用途）：表示它不再局限于最初的“纯英文文本”，而是可以处理文字、图片、音频、视频、应用程序等各种用途的数据。 ​Internet Mail（互联网邮件）：说明了它的出生背景，最初就是为了解决电子邮件的传输限制而设计的。 ​Extensions（扩展）：强调它是在老旧的 SMTP 邮件协议基础上，做的一层“外挂式”的兼容性扩展。 ​延伸：MIME 的今天 ​虽然 MIME 最早是为电子邮件量身定制的，但因为它的 Content-Type（媒体类型定义）设计得实在太成功了，以至于后来整个万维网（Web/HTTP 协议）都直接继承了这一套标准。 ​现在你用浏览器上网，服务器传给浏览器的每一个网页、每一张图片、每一个 API 接口数据，返回的 HTTP 响应头里都带着 MIME 类型（比如 Content-Type: application/json）。它已经从一个“邮件扩展协议”，变成了整个互联网多媒体类型的通用基石。">
+
+      
+      
+    
+	
+  </head><body class="ma0 avenir bg-near-white production is-page is-page page-​MIME ：Multipurpose Internet Mail Extensions。">
+   
+  
+
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        个人博客
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+<main class="pb7" role="main">
+  
+
+  <article class="page-​MIME ：Multipurpose Internet Mail Extensions。 flex-l mw7 center ph3 flex-wrap justify-between">
+    <header class="mt4 w-100"><aside class="instapaper_ignoref b helvetica tracked ttu">
+    <a class="link dim" href="https://xxx.pages.dev/posts/">Posts</a>
+  </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1"></h1>
+      
+      
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-100-l"><p>MIME 彻底理清：
+​1. 核心目的：让原本只能发“纯文本”的邮件，能够发送图片、音视频和附件
+​早期的互联网世界非常简陋，电子邮件（SMTP 协议）在设计之初，只支持传输英文字符（7位 ASCII 码）。这意味着你只能给别人发纯英文的信件，连中文都没法发，更别提发送图片、音乐或 Word 文档了。
+​痛点：用户迫切需要通过邮件发送丰富的内容（多媒体、多语言、附件），但现有的邮件系统架构已经定死，无法直接识别这些复杂的二进制文件。
+​目的：MIME 的诞生，就是为了在不彻底重构全球邮件系统的基础上，对邮件协议进行扩展。它定义了一套标准，告诉收发双方：这封邮件里不仅仅有文字，还藏着什么类型的文件，应该怎么去解析它。
+​2. 主要手段：头信息宣告 + 数据编码（Base64/Quoted-printable）
+​MIME 的实现手段非常巧妙，它就像是在一封信的信封和信件内部加了**“特殊的标签”**。主要通过以下两个手段实现：
+​① 在邮件头（Header）中增加 MIME 标签
+​MIME 在邮件的头部引入了几个关键字段，最核心的是 Content-Type（内容类型）。它用一种统一的格式来标记文件的属性，格式为 大类/小类。
+​Content-Type: image/jpeg （告诉接收方：这是一个 JPEG 图片）
+​Content-Type: application/pdf （告诉接收方：这是一个 PDF 文档）
+​Content-Type: text/html （告诉接收方：这是一段网页代码，请渲染它）
+​② 结合编码技术（如 Base64）进行打包
+​光打标签还不够，二进制数据依然无法直接在纯文本网络里传输。这时候 MIME 就会指定一种编码方式（通过 Content-Transfer-Encoding 字段）。
+​如果是图片或附件，MIME 就会调用我们刚才讲的 Base64 编码，把图片变成一堆安全的文本字符，塞进邮件正文里。
+​邮件送到对方手里后，对方的客户端（比如 Outlook 或 Gmail）看到 MIME 的标签，就知道“哦！这堆乱七八糟的文本其实是一张用 Base64 编码的 JPEG 图片”，于是自动把它解码，还原成图片展示出来。
+​3. 名称的含义：多用途互联网邮件扩展
+​MIME 的全称是：Multipurpose Internet Mail Extensions。
+​Multipurpose（多用途）：表示它不再局限于最初的“纯英文文本”，而是可以处理文字、图片、音频、视频、应用程序等各种用途的数据。
+​Internet Mail（互联网邮件）：说明了它的出生背景，最初就是为了解决电子邮件的传输限制而设计的。
+​Extensions（扩展）：强调它是在老旧的 SMTP 邮件协议基础上，做的一层“外挂式”的兼容性扩展。
+​延伸：MIME 的今天
+​虽然 MIME 最早是为电子邮件量身定制的，但因为它的 Content-Type（媒体类型定义）设计得实在太成功了，以至于后来整个万维网（Web/HTTP 协议）都直接继承了这一套标准。
+​现在你用浏览器上网，服务器传给浏览器的每一个网页、每一张图片、每一个 API 接口数据，返回的 HTTP 响应头里都带着 MIME 类型（比如 Content-Type: application/json）。它已经从一个“邮件扩展协议”，变成了整个互联网多媒体类型的通用基石。</p>
+<ul class="pa0">
+  
+</ul><ul class="pa0">
+  
+</ul>
+
+      
+    </div></article>
+</main><footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="https://xxx.pages.dev/" >
+    &copy;  个人博客 2026 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

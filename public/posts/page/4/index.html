@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>个人博客</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="">
+    <meta name="generator" content="Hugo 0.163.3">
+    
+    
+    
+      <meta name="robots" content="index, follow">
+    
+    
+
+    <link rel="stylesheet" href="/ananke/css/main.02a37ad6c4e155c542d276915a0e3f83f5c7c5fec443350f6e60753f1679b7a7.css" integrity="sha256-AqN61sThVcVC0naRWg4/g/XHxf7EQzUPbmB1PxZ5t6c=" crossorigin="anonymous">
+    <script>
+  (function () {
+    "use strict";
+
+    
+    
+    function revealButtons() {
+      var buttons = document.querySelectorAll(".code-block .code-copy[hidden]");
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].hidden = false;
+      }
+    }
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", revealButtons);
+    } else {
+      revealButtons();
+    }
+
+    function flash(button) {
+      var label = button.querySelector(".code-copy-label");
+      var previous = label ? label.textContent : null;
+      button.classList.add("is-copied");
+      if (label) label.textContent = "Copied";
+      window.setTimeout(function () {
+        button.classList.remove("is-copied");
+        if (label && previous !== null) label.textContent = previous;
+      }, 2000);
+    }
+
+    function legacyCopy(text) {
+      var area = document.createElement("textarea");
+      area.value = text;
+      area.setAttribute("readonly", "");
+      area.style.position = "absolute";
+      area.style.left = "-9999px";
+      document.body.appendChild(area);
+      area.select();
+      var ok = false;
+      try {
+        ok = document.execCommand("copy");
+      } catch (e) {
+        ok = false;
+      }
+      document.body.removeChild(area);
+      return ok;
+    }
+
+    function copyFrom(button) {
+      var container = button.closest(".code-block");
+      if (!container) return;
+      var pre = container.querySelector("pre");
+      if (!pre) return;
+      var source = pre.querySelector("code") || pre;
+      var text = source.innerText;
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(
+          function () { flash(button); },
+          function () { if (legacyCopy(text)) flash(button); }
+        );
+      } else if (legacyCopy(text)) {
+        flash(button);
+      }
+    }
+
+    document.addEventListener("click", function (event) {
+      var button = event.target.closest(".code-copy");
+      if (button) copyFrom(button);
+    });
+  })();
+</script>
+
+    
+      
+
+    
+
+    
+    
+      <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="个人博客" />
+      <link href="/posts/index.xml" rel="feed" type="application/rss+xml" title="个人博客" />
+      
+    
+
+    
+      <link rel="canonical" href="https://xxx.pages.dev/posts/">
+    
+
+    
+    
+    <meta property="og:url" content="https://xxx.pages.dev/posts/">
+	<meta property="og:site_name" content="个人博客">
+	<meta property="og:title" content="Posts">
+	<meta property="og:locale" content="zh_cn">
+	<meta property="og:type" content="website">
+
+	<meta itemprop="name" content="Posts">
+	<meta itemprop="datePublished" content="2026-06-22T20:37:34+08:00">
+	<meta itemprop="dateModified" content="2026-06-22T20:37:34+08:00">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Posts">
+
+      
+      
+    
+	
+  </head><body class="ma0 avenir bg-near-white production is-section is-section">
+
+  <header>
+    <div class="pb3-m pb6-l bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        个人博客
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+      
+      <div class="tc-l pv3 ph3 ph4-ns">
+        <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title">
+          Posts
+        </h1>
+        
+      </div>
+    </div>
+  </header>
+
+<main class="pb7" role="main">
+  
+  
+
+  <article class="pa3 pa4-ns nested-copy-line-height">
+    <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy nested-links mid-gray"></section>
+    <section class="flex-ns mt5 flex-wrap justify-around">
+      
+        <div class="w-100 w-30-l mb4 relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
+  <div class="mb3 pa4 gray overflow-hidden bg-white">
+    <span class="f6 db">Posts</span>
+    
+    <h1 class="f3 near-black">
+      <a href="/posts/%E7%94%B5%E8%84%91%E7%A1%AC%E4%BB%B6%E9%85%8D%E7%BD%AE%E9%99%88%E7%91%9E%E9%98%B3/" class="link black dim">
+        
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <p>京天华盛主机配置整理
+核心硬件
+处理器：Intel i5-14600KF
+显卡：RTX4060 8G（支持 DLSS3，242TOPS AI 算力）
+内存：32G
+固态：1TB</p>
+    </div>
+    <a href="/posts/%E7%94%B5%E8%84%91%E7%A1%AC%E4%BB%B6%E9%85%8D%E7%BD%AE%E9%99%88%E7%91%9E%E9%98%B3/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="w-100 w-30-l mb4 relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
+  <div class="mb3 pa4 gray overflow-hidden bg-white">
+    <span class="f6 db">Posts</span>
+    
+    <h1 class="f3 near-black">
+      <a href="/posts/%E7%9B%B8%E5%86%8C%E6%8E%92%E5%BA%8F%E9%97%AE%E9%A2%98/" class="link black dim">
+        
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <p>安卓手机，Pictures 目录下面的相册啊，这个拷进去以后，它是会生成一个一个的相册的，但是它的排序比较麻烦。相册的排序是在媒体库里面的排序的，然后它是第一次检索检索到的，按检索的应该是最后生成日期进行排序的，但是这个每一家手机它都不一样.拷进去以后很难做到自然排序。
+wim 复制文件，文件夹里面许多子文件夹，它应该是按照 A B C D 文件名正向排序进进行进行拷贝的。创建日期就会变化，但它修改日期不会变化，文件夹属性。手机上可以用 Mixplore 这个软件更改文件夹的创建日期和修改日期。
+手机有一个Image and video fix图片和视频修复软件可以按照文件名修，也可以按照这个原数据进行修改。然后呢也在 PC 上编了一个 PowerShell 脚本，按照文件夹的名称更改里面的 EXIF 数据。
+结论用专门的看图软件，Fstop 这个，它可以排除哪些文件夹不在相册里面，然后也可以相册按文件名进行排序，这样就比较好，不用折腾 Pictures文件夹。</p>
+    </div>
+    <a href="/posts/%E7%9B%B8%E5%86%8C%E6%8E%92%E5%BA%8F%E9%97%AE%E9%A2%98/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="w-100 w-30-l mb4 relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
+  <div class="mb3 pa4 gray overflow-hidden bg-white">
+    <span class="f6 db">Posts</span>
+    
+    <h1 class="f3 near-black">
+      <a href="/posts/%E8%A7%A3%E9%87%8A%E8%AE%B0%E5%BF%86/" class="link black dim">
+        
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <p>“解释一个复杂概念”（如“圆”、“询价”、“熵”）和“记忆一个单词/单字”（如“円”、“Apple”、“蕴”）在逻辑深度上是完全不同的。</p>
+<p>前者的目的是“理解逻辑与本质”，后者则是为了“内化与输出”。</p>
+<p>为了区分这两者，我们可以建立两套模板，你看看这样分类是否清晰：</p>
+<p>第一套：概念/事物解析模型 (侧重“理解”)
+适用场景： 解释一个原理、一个法律条文、一个抽象逻辑、或一种现象。</p>
+<p>字面意思： 它的定义是什么？</p>
+<p>本质逻辑： 它运行的核心规律是什么？</p>
+<p>解决的问题： 它为什么存在？它弥补了什么不足？</p>
+<p>使用的方法： 它如何作用于现实世界？</p>
+<p>第二套：词汇/单字记忆模型 (侧重“掌握”)
+适用场景： 单词、汉字、术语（你刚才定好的那个模型）。</p>
+<ol>
+<li>
+<p>基础认知： 发音（声调/重音）、核心含义。</p>
+</li>
+<li>
+<p>本质溯源： 造字法（汉字）或词根词缀（英语）。（这是为了从源头记住）</p>
+</li>
+<li>
+<p>深度拓展： 常用搭配、高频例句。（这是为了学会用）</p>
+</li>
+<li>
+<p>记忆锚点： 谐音、图像化、对比记忆。（这是为了刻在脑子里）</p>
+</li>
+</ol>
+<p>这种区分方式的优势：
+明确目标： 当你让我解释“圆”时，如果你说“给我解析一下”，我就用第一套；如果你说“帮我记一下这个词”，我就用第二套。</p>
+<p>避免冗余： 解释“询价”这种专业法律概念时，不需要去拆解字源（因为它本质是制度）；解释“円”这种语言符号时，不需要长篇大论它的宏观作用，而是需要拆解记忆。</p>
+    </div>
+    <a href="/posts/%E8%A7%A3%E9%87%8A%E8%AE%B0%E5%BF%86/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="w-100 w-30-l mb4 relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
+  <div class="mb3 pa4 gray overflow-hidden bg-white">
+    <span class="f6 db">Posts</span>
+    
+    <h1 class="f3 near-black">
+      <a href="/posts/%E8%BD%AC%E4%B9%89%E7%AC%A6/" class="link black dim">
+        
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <p>转义符
+​反斜杠 \ 就是转义符。计算机不识别左右引号，它一个引号是开启字符模式，第二个引号就是结束字符模式。所以如果一个路径字符串里面有空格的话，参数就会被断开，这样就会出错，所以必须用转义符保护引号，让系统把它们当作普通字符处理。</p>
+    </div>
+    <a href="/posts/%E8%BD%AC%E4%B9%89%E7%AC%A6/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="w-100 w-30-l mb4 relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
+  <div class="mb3 pa4 gray overflow-hidden bg-white">
+    <span class="f6 db">Posts</span>
+    
+    <h1 class="f3 near-black">
+      <a href="/posts/%E9%AC%A3-li%C3%A8/" class="link black dim">
+        
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <p>汉字记忆卡：鬣 (liè)
+​🗣️ 读音：liè (音同“烈”)
+📖 本义：兽类颈背上又长又密的毛。
+🏷️ 组词：猪刚鬣、鬣狗、马鬣
+​🧩 【核心逻辑：上形 + 下声】
+上部：髟 (biāo) —— 由“长”和“彡”组成，代表“长毛发”。
+下部：巤 (liè)  —— 象形字，长毛猛兽，也是发音来源。
+​✍️ 【书写拆解：四层汉堡法】
+从上到下可以拆成四层：
+​顶层：髟 (长+彡) —— 画面：长发飘飘
+​第二层：巛 (chuān) —— 画面：倒竖如钢针的鬃毛
+​第三层：龱 (口+乂) —— 画面：野兽扁扁的头骨和面部
+​底层：鼠字底 —— 画面：野兽身体和利爪 (与“鼠”字下半身完全相同)
+​💡 【画面联想记忆】
+想象一头野猪精（猪刚鬣）：头上顶着长发(髟)，颈背竖着钢毛(巛)，长着方块脑袋(龱)，挥舞着像老鼠一样的利爪(鼠字底)。它的性情极其刚烈(liè)！</p>
+    </div>
+    <a href="/posts/%E9%AC%A3-li%C3%A8/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="w-100 w-30-l mb4 relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
+  <div class="mb3 pa4 gray overflow-hidden bg-white">
+    <span class="f6 db">Posts</span>
+    
+    <h1 class="f3 near-black">
+      <a href="/posts/%E9%BB%84%E8%A7%82%E5%85%AD%E7%BA%A7%E7%A7%91%E4%B8%BE/" class="link black dim">
+        
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <p>黄观六级科举备考明细</p>
+<p>1、县试：本县范围内考试，县衙主办，考取后身份：童生
+2、府试：全府辖区统考，池州府衙主办，考取后身份：童生
+3、院试：南直隶大范围统考，提督学院主管，考取后身份：秀才
+4、乡试：南直隶全省统考，南京设考场，考取后身份：举人
+5、会试：全国各地举人汇集京城统考，考取后身份：贡士
+6、殿试：皇宫大内由皇帝主持考试，考取后身份：进士</p>
+<p>晋升链路：童生→秀才→举人→贡士→进士                    await app.fileManager.renameFile(file, timestampPath);
+}
+}
+}
+};</p>
+<pre><code>// 告诉 Obsidian：只要这个文件被写入内容了，立刻叫醒上面的 onModify 函数
+app.vault.on('modify', onModify);
+
+// 防呆机制：如果5秒内啥也没发生（比如剪贴板是空的），自动注销监听，省得占内存
+setTimeout(() =&gt; app.vault.off('modify', onModify), 5000);
+</code></pre>
+<p>}
+%&gt;</p>
+    </div>
+    <a href="/posts/%E9%BB%84%E8%A7%82%E5%85%AD%E7%BA%A7%E7%A7%91%E4%B8%BE/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+    </section>
+    
+		<ul class="pagination pagination-default">
+			<li class="page-item">
+				<a href="/posts/" aria-label="First" class="page-link" role="button"><span aria-hidden="true">&laquo;&laquo;</span></a>
+			</li>
+		<li class="page-item">
+			<a href="/posts/page/3/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
+		</li>
+			<li class="page-item">
+				<a href="/posts/" aria-label="Page 1" class="page-link" role="button">1</a>
+			</li>
+			<li class="page-item">
+				<a href="/posts/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
+			</li>
+			<li class="page-item">
+				<a href="/posts/page/3/" aria-label="Page 3" class="page-link" role="button">3</a>
+			</li>
+			<li class="page-item active">
+				<a aria-current="page" aria-label="Page 4" class="page-link" role="button">4</a>
+			</li>
+		<li class="page-item disabled">
+			<a aria-disabled="true" aria-label="Next" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;</span></a>
+		</li>
+			<li class="page-item disabled">
+				<a aria-disabled="true" aria-label="Last" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;&raquo;</span></a>
+			</li>
+		</ul></article>
+</main><footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="https://xxx.pages.dev/" >
+    &copy;  个人博客 2026 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
