@@ -1,13 +1,10 @@
 ---
-title: "文章标题"
+title: "资源浏览器中快速打开powershell"
 date: 2026-08-14
-tags: ["随笔"]
+tags: ["win10"]
 draft: false
 ---
-
-这里是正文……
-
 按住 Shift 右击那个文件，就会出现复制路径，这样就可以把这个路径直接扔到 PowerShell 管理权限，以管理员权限运行了。
-PowerShell 一它的脚本要另存为带 BOM 格式的 UTF-8，否则乱码
+
 
 
