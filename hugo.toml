@@ -1,11 +1,28 @@
 baseURL = "https://hongshunli-spec.github.io/blog/"
 locale = "zh-cn"
 title = "池州老洪的博客"
-theme = "bearblog"
+theme = "PaperMod"
 hasCJKLanguage = true
 
 [params]
   author = "池州老洪"
   description = "个人文字随笔记录"
-  darkModeAuto = true
-  hideMadeWith = true
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  disableSpecial404 = false
+
+[menu]
+  [[menu.main]]
+    name = "首页"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "归档"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
+    name = "搜索"
+    url = "/search/"
+    weight = 3
