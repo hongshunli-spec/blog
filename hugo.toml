@@ -1,4 +1,5 @@
-theme = "ananke"
-baseURL = "https://xxx.pages.dev/"
+theme = "bearblog"
+baseURL = "https://myblog-1bp.pages.dev/"
 locale = "zh-cn"
-title = "个人博客"
+title = "池州老洪的博客"
+hasCJKLanguage = true # 解决全站中文乱码关键
