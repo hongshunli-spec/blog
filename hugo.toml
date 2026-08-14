@@ -1,29 +1,13 @@
 baseURL = "https://hongshunli-spec.github.io/blog/"
-relativeURLs = true
-locale = "zh-cn"
-title = "池州老洪的博客"
 theme = "PaperMod"
-hasCJKLanguage = true
+# relativeURLs = true  #注释掉，不要写在这里
+languageCode = "zh‑CN"
 
 [params]
-  author = "池州老洪"
-  description = "个人文字随笔记录"
-  ShowReadingTime = true
-  ShowPostNavLinks = true
-  ShowBreadCrumbs = true
-  ShowCodeCopyButtons = true
-  disableSpecial404 = false
+title = "池州老洪的博客"
+description = "技术笔记博客"
+author = "池州老洪"
 
-[menu]
-  [[menu.main]]
-    name = "首页"
-    url = "/"
-    weight = 1
-  [[menu.main]]
-    name = "归档"
-    url = "/posts/"
-    weight = 2
-  [[menu.main]]
-    name = "搜索"
-    url = "/search/"
-    weight = 3
+[params.appearance]
+theme = "auto"
+darkMode = true
