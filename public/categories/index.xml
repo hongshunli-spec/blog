@@ -5,7 +5,7 @@
     <link>http://localhost:1313/blog/categories/</link>
     <description>Recent content in Categories on </description>
     <generator>Hugo</generator>
-    <language>zh‑CN</language>
+    <language>zh-CN</language>
     <atom:link href="http://localhost:1313/blog/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

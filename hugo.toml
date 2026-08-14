@@ -1,12 +1,19 @@
 baseURL = "https://hongshunli-spec.github.io/blog/"
 theme = "PaperMod"
 # relativeURLs = true  #注释掉，不要写在这里
-languageCode = "zh‑CN"
+locale = "zh-CN"
+
+# 新版标准分页配置（替代废弃paginate = 5）
+[pagination]
+pagerSize = 5
 
 [params]
 title = "池州老洪的博客"
 description = "技术笔记博客"
 author = "池州老洪"
+homePostsCount = 5
+paginationShowPageNumbers = true
+disableSpecial1stPost = true
 
 [params.appearance]
 theme = "auto"
