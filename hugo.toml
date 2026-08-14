@@ -1,4 +1,4 @@
 theme = "ananke"
 baseURL = "https://xxx.pages.dev/"
-languageCode = "zh-cn"
+locale = "zh-cn"
 title = "个人博客"
