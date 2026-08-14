@@ -1,4 +1,4 @@
-baseURL = "https://xxx.pages.dev/"
+baseURL = "https://hongshunli-spec.github.io/blog/"
 locale = "zh-cn"
 title = "池州老洪的博客"
 theme = "bearblog"
