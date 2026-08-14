@@ -1,5 +1,11 @@
-theme = "bearblog"
-baseURL = "https://myblog-1bp.pages.dev/"
+baseURL = "https://xxx.pages.dev/"
 locale = "zh-cn"
 title = "池州老洪的博客"
-hasCJKLanguage = true # 解决全站中文乱码关键
+theme = "bearblog"
+hasCJKLanguage = true
+
+[params]
+  author = "池州老洪"
+  description = "个人文字随笔记录"
+  darkModeAuto = true
+  hideMadeWith = true
