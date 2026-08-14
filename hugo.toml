@@ -1,9 +1,9 @@
 baseURL = "https://hongshunli-spec.github.io/blog/"
+relativeURLs = true   # 取消注释，线上必须开启
+canonifyURLs = false
 theme = "PaperMod"
-# relativeURLs = true  #注释掉，不要写在这里
 locale = "zh-CN"
 
-# 新版标准分页配置（替代废弃paginate = 5）
 [pagination]
 pagerSize = 5
 
