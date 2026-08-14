@@ -1,4 +1,5 @@
 baseURL = "https://hongshunli-spec.github.io/blog/"
+relativeURLs = true
 locale = "zh-cn"
 title = "池州老洪的博客"
 theme = "PaperMod"
